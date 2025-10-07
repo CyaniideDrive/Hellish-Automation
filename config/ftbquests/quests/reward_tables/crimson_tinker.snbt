@@ -1,0 +1,36 @@
+{
+	id: "738A8A5682AD094B"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{
+			item: {
+				Count: 1
+				id: "tconstruct:crafting_station"
+				tag: {
+					texture: "minecraft:stripped_crimson_stem"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "tconstruct:tinker_station"
+				tag: {
+					texture: "minecraft:crimson_planks"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "tconstruct:part_builder"
+				tag: {
+					texture: "minecraft:crimson_planks"
+				}
+			}
+		}
+		{ count: 16, item: "tconstruct:pattern" }
+	]
+	title: "Crimson Tinker"
+}

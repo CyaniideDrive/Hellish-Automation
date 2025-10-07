@@ -1,0 +1,137 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Author: CyanSoup",
+	"parent": "minecraft:block/block",
+	"textures": {
+		"3": "kubejs:block/ghasts/dried_ghast_hydration_3_north",
+		"4": "kubejs:block/ghasts/dried_ghast_hydration_3_top",
+		"5": "kubejs:block/ghasts/dried_ghast_hydration_3_south",
+		"6": "kubejs:block/ghasts/dried_ghast_hydration_3_west",
+		"7": "kubejs:block/resurgent_soil",
+		"8": "kubejs:block/ghasts/dried_ghast_hydration_3_bottom",
+		"9": "kubejs:block/ghasts/dried_ghast_hydration_3_tentacles",
+		"particle": "kubejs:block/ghasts/dried_ghast_hydration_3_north"
+	},
+	"elements": [
+		{
+			"name": "soil",
+			"from": [5, 9.01, 5],
+			"to": [11, 9.01, 11],
+			"faces": {
+				"up": {"uv": [0, 0, 16, 16], "texture": "#7"}
+			}
+		},
+		{
+			"name": "Platform 2",
+			"from": [4, 4, 4],
+			"to": [12, 9, 12],
+			"faces": {
+				"north": {"uv": [0, 0, 10, 10], "texture": "#3"},
+				"east": {"uv": [10, 0, 0, 10], "texture": "#6"},
+				"south": {"uv": [0, 0, 10, 10], "texture": "#5"},
+				"west": {"uv": [0, 0, 10, 10], "texture": "#6"},
+				"up": {"uv": [0, 0, 10, 10], "rotation": 180, "texture": "#4"},
+				"down": {"uv": [0, 0, 10, 10], "texture": "#8"}
+			}
+		},
+		{
+			"name": "tentacle1",
+			"from": [4.1, 1, 4.5],
+			"to": [5.6, 4, 6],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4, 0, 4]},
+			"faces": {
+				"north": {"uv": [1.5, 0, 2.5, 1.5], "texture": "#9"},
+				"east": {"uv": [1.5, 0, 2.5, 1.5], "texture": "#9"},
+				"south": {"uv": [1.5, 0, 2.5, 1.5], "texture": "#9"},
+				"west": {"uv": [1.5, 0, 2.5, 1.5], "texture": "#9"},
+				"up": {"uv": [1.5, 0, 2.5, 0.5], "texture": "#9"},
+				"down": {"uv": [1.5, 1, 2.5, 1.5], "texture": "#9"}
+			}
+		},
+		{
+			"name": "tentacle2",
+			"from": [4.1, 1.5, 7.5],
+			"to": [5.6, 4.5, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4, 0, 8]},
+			"faces": {
+				"north": {"uv": [1.5, 0, 2.5, 1.5], "texture": "#9"},
+				"east": {"uv": [1.5, 0, 2.5, 1.5], "texture": "#9"},
+				"south": {"uv": [1.5, 0, 2.5, 1.5], "texture": "#9"},
+				"west": {"uv": [1.5, 0, 2.5, 1.5], "texture": "#9"},
+				"up": {"uv": [1.5, 0, 2.5, 0.5], "texture": "#9"},
+				"down": {"uv": [1.5, 1, 2.5, 1.5], "texture": "#9"}
+			}
+		},
+		{
+			"name": "tentacle3",
+			"from": [10.4, 1.75, 7.5],
+			"to": [11.9, 4.75, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [11, 0, 8]},
+			"faces": {
+				"north": {"uv": [1.5, 0, 2.5, 1.5], "texture": "#9"},
+				"east": {"uv": [1.5, 0, 2.5, 1.5], "texture": "#9"},
+				"south": {"uv": [1.5, 0, 2.5, 1.5], "texture": "#9"},
+				"west": {"uv": [1.5, 0, 2.5, 1.5], "texture": "#9"},
+				"up": {"uv": [1.5, 0, 2.5, 0.5], "texture": "#9"},
+				"down": {"uv": [1.5, 1, 2.5, 1.5], "texture": "#9"}
+			}
+		},
+		{
+			"name": "tentacle4",
+			"from": [10.4, 1.25, 4.5],
+			"to": [11.9, 4.25, 6],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4, 0, 4]},
+			"faces": {
+				"north": {"uv": [1.5, 0, 2.5, 1.5], "texture": "#9"},
+				"east": {"uv": [1.5, 0, 2.5, 1.5], "texture": "#9"},
+				"south": {"uv": [1.5, 0, 2.5, 1.5], "texture": "#9"},
+				"west": {"uv": [1.5, 0, 2.5, 1.5], "texture": "#9"},
+				"up": {"uv": [1.5, 0, 2.5, 0.5], "texture": "#9"},
+				"down": {"uv": [1.5, 1, 2.5, 1.5], "texture": "#9"}
+			}
+		},
+		{
+			"name": "tentacle6",
+			"from": [5.5, 1, 10.4],
+			"to": [7, 4, 11.9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4, 0, 11]},
+			"faces": {
+				"north": {"uv": [1.5, 0, 2.5, 1.5], "texture": "#9"},
+				"east": {"uv": [1.5, 0, 2.5, 1.5], "texture": "#9"},
+				"south": {"uv": [1.5, 0, 2.5, 1.5], "texture": "#9"},
+				"west": {"uv": [1.5, 0, 2.5, 1.5], "texture": "#9"},
+				"up": {"uv": [1.5, 0, 2.5, 0.5], "texture": "#9"},
+				"down": {"uv": [1.5, 1, 2.5, 1.5], "texture": "#9"}
+			}
+		},
+		{
+			"name": "tentacle5",
+			"from": [9, 1.5, 10.4],
+			"to": [10.5, 4.5, 11.9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4, 0, 11]},
+			"faces": {
+				"north": {"uv": [1.5, 0, 2.5, 1.5], "texture": "#9"},
+				"east": {"uv": [1.5, 0, 2.5, 1.5], "texture": "#9"},
+				"south": {"uv": [1.5, 0, 2.5, 1.5], "texture": "#9"},
+				"west": {"uv": [1.5, 0, 2.5, 1.5], "texture": "#9"},
+				"up": {"uv": [1.5, 0, 2.5, 0.5], "texture": "#9"},
+				"down": {"uv": [1.5, 1, 2.5, 1.5], "texture": "#9"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [30, -135, 0],
+			"scale": [0.75, 0.75, 0.75]
+		}
+	},
+	"groups": [
+		0,
+		{
+			"name": "group",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [1, 2, 3, 4, 5, 6, 7]
+		}
+	]
+}

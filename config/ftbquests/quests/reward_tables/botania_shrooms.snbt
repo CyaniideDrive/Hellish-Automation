@@ -1,0 +1,24 @@
+{
+	id: "55FB7A7A5503E055"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{ count: 16, item: "botania:white_mushroom" }
+		{ count: 16, item: "botania:light_gray_mushroom" }
+		{ count: 16, item: "botania:gray_mushroom" }
+		{ count: 16, item: "botania:black_mushroom" }
+		{ count: 16, item: "botania:brown_mushroom" }
+		{ count: 16, item: "botania:red_mushroom" }
+		{ count: 16, item: "botania:orange_mushroom" }
+		{ count: 16, item: "botania:yellow_mushroom" }
+		{ count: 16, item: "botania:lime_mushroom" }
+		{ count: 16, item: "botania:green_mushroom" }
+		{ count: 16, item: "botania:cyan_mushroom" }
+		{ count: 16, item: "botania:light_blue_mushroom" }
+		{ count: 16, item: "botania:blue_mushroom" }
+		{ count: 16, item: "botania:purple_mushroom" }
+		{ count: 16, item: "botania:magenta_mushroom" }
+		{ count: 16, item: "botania:pink_mushroom" }
+	]
+	title: "botania shrooms"
+}

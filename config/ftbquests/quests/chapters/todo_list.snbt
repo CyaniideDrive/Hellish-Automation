@@ -1,0 +1,341 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "todo_list"
+	group: "60AF5DD8133AB8D1"
+	id: "090BA77E2A2B1B73"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Feel free to suggest things to me if you're here to help out, otherwise thanks for giving the pack a try!"]
+			id: "6B0CB4BFB469A972"
+			subtitle: "What is left to finish"
+			tasks: [{
+				id: "1842BE364803FCA8"
+				title: "ToDo List"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			id: "6A9646DDAA86C624"
+			tasks: [{
+				id: "56BC00E7137C886F"
+				title: "Chapter 5"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			id: "0FF29F66741B3217"
+			tasks: [{
+				id: "4B409422AACDA138"
+				title: "Chapter 6"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			id: "4D9CACBDE3444A62"
+			tasks: [{
+				id: "606CC38725580956"
+				title: "Fill Shop"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			id: "378DC47D1E1C3FBC"
+			tasks: [{
+				id: "72FAE40D976280C1"
+				title: "Main things"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: -0.5d
+		}
+		{
+			id: "6ED473EC229613CB"
+			tasks: [{
+				id: "53411B07EBBC40B8"
+				title: "Ending"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 3.0d
+		}
+		{
+			id: "4859B88C042CF9F3"
+			tasks: [{
+				id: "20105D77F9F1E0AB"
+				title: "Fill out more quest rewards"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			id: "74E2F05CC42DBBD3"
+			tasks: [{
+				id: "371C6236E50B40EE"
+				title: "Kit additions"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"Using progression items on this should give you different advanced equipment."
+				""
+				"Should be at Living Tier but need higher tier items applied to make most things."
+				"{@pagebreak}"
+				"Forged Slime Gears for Oreexcavation tools."
+				""
+				"Basic tools like extendo grips made with brass materials."
+				""
+				"Backtanks should be made with this too (copper gears? copper tanks? custom item made from a fish material like grouper scales?)"
+			]
+			id: "103A39B867D0416F"
+			tasks: [{
+				id: "4F9890D1A35363E0"
+				title: "Equipment Kit"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Used to make Thermal machines."
+				""
+				"Uses \"Tech Casings\" which are renamed machine frames."
+			]
+			id: "33C9723D26CDAA31"
+			tasks: [{
+				id: "6AD83967DE872171"
+				title: "chapter 5 kit"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Self aware kits, used to make ae2 stuff."
+				""
+				"Unnamed kits (warped?) used to make teleportation technology, also the base for escaping the nether."
+			]
+			id: "1719579AE470B22A"
+			tasks: [{
+				id: "678CFF91B2CBE3FE"
+				title: "Chapter 6 kits"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			id: "2458A5D4F22F5336"
+			tasks: [{
+				id: "357EA1C36D846915"
+				title: "cleanup tasks"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"make copper look like gold and gold look like cobalt (maybe mix it up and add another custom tier replacing iron?)"
+				""
+				"If replacing iron happens, swap cobalt to iron tier then make mannylyn(maybe?) the next tier, maybe heptazion for something different?"
+			]
+			id: "5A4320AF40866597"
+			tasks: [{
+				id: "06B34750134DEC28"
+				title: "retexture sophisticated storage and backpacks"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			description: ["Check for unedited textures pretty much."]
+			id: "650F6A93385A4985"
+			tasks: [{
+				id: "394F1ADE7C209625"
+				title: "Final Pass on casing retextures."
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			description: ["Make sure all the renamed stuff is renamed everywhere needed, including ponders and advancements."]
+			id: "512B6E65B14A9375"
+			tasks: [{
+				id: "4EB8FAD6DCEB0E0B"
+				title: "Final pass on Lang Files."
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			id: "61D89389D2623495"
+			tasks: [{
+				id: "6266279BE47FC2CC"
+				title: "Theurgy Sidequest"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: 3.0d
+		}
+		{
+			description: ["botania is pretty well explained by the book, but a beginners guide might be good"]
+			id: "6AB653767478D41D"
+			tasks: [{
+				id: "5460DB7FDF31F4F0"
+				title: "Botania Sidequest (maybe?)"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Tcon guide (barebones since the books are pretty good)"
+				""
+				"Ore Excavation guide"
+				""
+				"Create Frogports and logitstics guide?"
+			]
+			id: "5F6FC8108E82E8CE"
+			tasks: [{
+				id: "02CCE202C77A031E"
+				title: "Guide sidequests"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: 2.0d
+		}
+		{
+			id: "6F84509A47EE1854"
+			tasks: [{
+				id: "3224E6C79556736A"
+				title: "possible reworks"
+				type: "checkmark"
+			}]
+			x: -9.0d
+			y: -0.5d
+		}
+		{
+			description: ["making it like all other metals is kinda boring, not sure how to improve it though"]
+			id: "0DB2939D592BE5FD"
+			tasks: [{
+				id: "70EC385B7340C561"
+				title: "molten enderium rework"
+				type: "checkmark"
+			}]
+			x: -9.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"need to mention mimic recipe so people can get artifacts as well"
+				"{@pagebreak}"
+				"Also make a recipe for soul beads for peaceful playthroughs."
+				""
+				"Maybe also add some relics from the overworld to mimic drop pool?"
+			]
+			id: "1A57E923F9112CDA"
+			tasks: [{
+				id: "0A107AA4CA71D8D5"
+				title: "relics sidequest"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: 1.0d
+		}
+		{
+			description: ["Make a recipe for soul beads."]
+			id: "6ED67791D46F6DE7"
+			subtitle: "need to do a peaceful playthrough to find bottlenecks"
+			tasks: [{
+				id: "500D7AD50B5D8A97"
+				title: "peaceful tweaks"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			description: [
+				"I've made the blocks but commented them out for now, I also have the textures ready."
+				""
+				"I just don't know what to make the cost and if I really need to add this, maybe add them just as decor?"
+			]
+			id: "18E424EA3F4BEE01"
+			tasks: [{
+				id: "38C56909DC313EDB"
+				title: "actual dead cardboard"
+				type: "checkmark"
+			}]
+			x: -9.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"possibility to make gold coins used to barter instead if I can figure out how"
+				""
+				"alternatively just swap gold coins for rose gold or maybe iron coins?"
+				""
+				"another possibility is to make piglins give you all the coin types that they can give nuggets, then make them all have different trade categories, or maybe just a new tag for low value(base metals) vs high value(silver/netherite) coins for trading?"
+				""
+				"could also leave as is"
+			]
+			id: "0D2AB59002BC7546"
+			tasks: [{
+				id: "7099A54CFA9FDDEC"
+				title: "coins rework"
+				type: "checkmark"
+			}]
+			x: -9.0d
+			y: 3.0d
+		}
+		{
+			description: ["all stuff you'd need to find while exploring, unwanted relics, mob spawners maybe?, etc."]
+			id: "6A93817143697794"
+			tasks: [{
+				id: "61BFFB6648F006F1"
+				title: "actual selling section in shop"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			description: [
+				"would need a new decoration kit or maybe to just scrap the decor kit idea"
+				""
+				"could use axis arrows item as part of the escape strat and increase the price?"
+			]
+			id: "31C298FD5ADAAD90"
+			tasks: [{
+				id: "2D08C1909D7DAD31"
+				title: "rework axis kits into a variant of machine kit?"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+	]
+	title: "Dev Quests"
+}

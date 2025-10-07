@@ -1,0 +1,458 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "lifeless_age"
+	group: "54B033DC4F3712FE"
+	hide_quest_until_deps_visible: true
+	icon: "create:copper_casing"
+	id: "1BB404BE1F3187A3"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"7C6D83850F60DE9B"
+				"33C429EC46ECC39D"
+			]
+			icon: "kubejs:liquid_rubber_bucket"
+			id: "6AB1B95425E67E2B"
+			subtitle: "Sticky and sloshy."
+			tasks: [{
+				id: "4B57812BCC89C51F"
+				item: "kubejs:liquid_rubber_bucket"
+				type: "item"
+			}]
+			title: "Rubber"
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4F8A65DDFA891B8E"]
+			icon: "kubejs:fruit_latex_bucket"
+			id: "7C6D83850F60DE9B"
+			subtitle: "Suddenly these seem even less edible..."
+			tasks: [
+				{
+					id: "552FBE5CDA9F6AAC"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:exotic_fruits)"
+						}
+					}
+					title: "Any #kubejs:exotic_fruits"
+					type: "item"
+				}
+				{
+					id: "4C71BFF5D6FFBE5A"
+					item: "kubejs:fruit_latex_bucket"
+					type: "item"
+				}
+			]
+			title: "Fruity Latex"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7C6D83850F60DE9B"
+				"3915701AE45B3474"
+				"4CA85484E4D834A7"
+			]
+			description: ["With the power of every fruit and some greed, this tree makes latex really efficiently!"]
+			id: "75CA4AE94B91250D"
+			optional: true
+			rewards: [{
+				count: 4
+				id: "67F0391986233B3F"
+				item: "thermal:device_tree_extractor"
+				type: "item"
+			}]
+			subtitle: "Much better!"
+			tasks: [{
+				id: "27A488BFEEC78642"
+				item: "thermal:rubberwood_sapling"
+				type: "item"
+			}]
+			title: "Improved Latex"
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"6AB1B95425E67E2B"
+				"20E5FD1EB9AA0E75"
+				"3EDA19FE35DD343F"
+			]
+			id: "738784637B89A23B"
+			subtitle: "Chewy but not edible."
+			tasks: [{
+				id: "39E3ED27BB78203D"
+				item: "kubejs:rubber_gear"
+				type: "item"
+			}]
+			title: "Squishy Gears"
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"60AFE79ACB2DD5DB"
+				"4F8A65DDFA891B8E"
+			]
+			description: [
+				"Go catch a blaze in the burner."
+				""
+				"If you're playing on peaceful, click a spawner instead."
+			]
+			id: "33C429EC46ECC39D"
+			subtitle: "Kind of unethical..."
+			tasks: [
+				{
+					advancement: "minecraft:nether/find_fortress"
+					criterion: ""
+					id: "2F42080B4E30F564"
+					type: "advancement"
+				}
+				{
+					id: "6A05231D20BF3CA9"
+					item: "create:empty_blaze_burner"
+					type: "item"
+				}
+				{
+					id: "2BFB7DE0D38B3A24"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+			]
+			title: "Sentient Fireplace"
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"738784637B89A23B"
+				"3EDA19FE35DD343F"
+				"130FB58D209324AE"
+			]
+			description: [
+				"These make belts, funnels, chutes, and other transport machines!"
+				"{@pagebreak}"
+				"Consider making a crate from quark, their storage is buffed and they are perfect for storing unstackable items like those in sequential assemblies!"
+			]
+			id: "76EB2DEE222AAB81"
+			rewards: [{
+				count: 8
+				id: "0CB0B64F93A87409"
+				item: "kubejs:rubber_gear"
+				type: "item"
+			}]
+			subtitle: "Item transport box!"
+			tasks: [{
+				id: "302D97DC8B361FD2"
+				item: "kubejs:rubber_kit"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6A568B6E4315B73B"
+				"6F00514364FA2F79"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The foundry is built slightly differently than the smeltery, make sure to check fantastic foundry to learn the right shape!"
+				"{@pagebreak}"
+				"You also need a gold platform to cast blocks and cannot cast directly into tables."
+				""
+				"If you want to make things like bars that have no cast in tables you must cast onto gold bars."
+			]
+			id: "2ECE20020E9FDF80"
+			rewards: [
+				{
+					id: "1E5793B7B8C0C1F5"
+					item: "tconstruct:puny_smelting"
+					type: "item"
+				}
+				{
+					id: "18D3E49B12667FC0"
+					item: "tconstruct:mighty_smelting"
+					type: "item"
+				}
+				{
+					id: "2247F325A4070639"
+					item: "tconstruct:fantastic_foundry"
+					type: "item"
+				}
+			]
+			subtitle: "Meltdown!"
+			tasks: [
+				{
+					id: "08B9CD0F7EB8F4F8"
+					item: "tconstruct:foundry_controller"
+					type: "item"
+				}
+				{
+					id: "05DC5BF80A3A837B"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tconstruct:foundry_bricks)"
+						}
+					}
+					title: "Any #tconstruct:foundry_bricks"
+					type: "item"
+				}
+				{
+					id: "5C8046F5E0F66140"
+					item: "tconstruct:scorched_fuel_tank"
+					type: "item"
+				}
+				{
+					id: "6C94A918D877CA1F"
+					item: "tconstruct:scorched_drain"
+					type: "item"
+				}
+				{
+					id: "6D8258E1F181850A"
+					item: "tconstruct:scorched_faucet"
+					type: "item"
+				}
+			]
+			title: "Foundry"
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2ECE20020E9FDF80"]
+			id: "130FB58D209324AE"
+			subtitle: "First real alloy!"
+			tasks: [{
+				id: "3B52432ACED36A85"
+				item: "tconstruct:molten_rose_gold_bucket"
+				type: "item"
+			}]
+			title: "Rose Gold Mixing"
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4F8A65DDFA891B8E"]
+			dependency_requirement: "one_completed"
+			icon: "tconstruct:molten_obsidian_bucket"
+			id: "6A568B6E4315B73B"
+			subtitle: "No diamonds required."
+			tasks: [{
+				id: "2BCD24EDE8EF5B9C"
+				item: "tconstruct:molten_obsidian_bucket"
+				type: "item"
+			}]
+			title: "Obsidian Mixing"
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"43EB1724229DB39C"
+				"130FB58D209324AE"
+			]
+			id: "3EDA19FE35DD343F"
+			subtitle: "Still cardboard inside..."
+			tasks: [{
+				advancement: "create:copper_casing"
+				criterion: ""
+				id: "55F7734C2DBCCEBC"
+				type: "advancement"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"76EB2DEE222AAB81"
+				"4CA85484E4D834A7"
+			]
+			id: "4661112CD8ADC375"
+			rewards: [{
+				id: "1E01A9107A031C6D"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "Basic Transport!"
+			tasks: [{
+				id: "1CF390D9D94C89E1"
+				title: "Chapter Complete!"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"2E18602701F828A8"
+				"3050018DBF1D6C69"
+			]
+			id: "5684C23F90089168"
+			subtitle: "Pump it up!"
+			tasks: [{
+				id: "6244AC7E0270C8B6"
+				item: "thermal:signalum_gear"
+				type: "item"
+			}]
+			title: "Spicy Gears"
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"3EDA19FE35DD343F"
+				"5684C23F90089168"
+			]
+			description: ["These can make pipes, tanks, and foundry \\& smeltery blocks, and other fluid machines!"]
+			id: "4CA85484E4D834A7"
+			rewards: [{
+				count: 8
+				id: "6334BD78B94F1D3F"
+				item: "thermal:signalum_gear"
+				type: "item"
+			}]
+			subtitle: "Fluid transport box!"
+			tasks: [{
+				id: "0AE23ECFE5A7D8BC"
+				item: "kubejs:lava_kit"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["176C8407ED5F51D5"]
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
+			icon: "tconstruct:rose_gold_block"
+			id: "4F8A65DDFA891B8E"
+			subtitle: "Learning to move liquids and items."
+			tasks: [{
+				id: "592816B1850492BC"
+				title: "Rose Gold Tech"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"2ECE20020E9FDF80"
+				"1521F9295436CB74"
+			]
+			description: ["Alternative to the foundry, still can't make alloys but only gives primary resources."]
+			id: "20789016A35224D0"
+			optional: true
+			rewards: [{
+				id: "17DB1B81FA379762"
+				item: "tconstruct:encyclopedia"
+				type: "item"
+			}]
+			subtitle: "Purer metals."
+			tasks: [
+				{
+					id: "4C59690273ACE85B"
+					item: "tconstruct:smeltery_controller"
+					type: "item"
+				}
+				{
+					id: "4F85C4BFAB2517DA"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tconstruct:seared_bricks)"
+						}
+					}
+					title: "Any #tconstruct:seared_bricks"
+					type: "item"
+				}
+				{
+					id: "378C7E2078EF50FE"
+					item: "tconstruct:seared_fuel_tank"
+					type: "item"
+				}
+				{
+					id: "4E720B19C3056C2F"
+					item: {
+						Count: 1
+						id: "tconstruct:seared_drain"
+						tag: {
+							texture: "tconstruct:seared_stone"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5F8BFCDEE99EC25B"
+					item: "tconstruct:seared_faucet"
+					type: "item"
+				}
+			]
+			title: "Smeltery"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"2ECE20020E9FDF80"
+				"33C429EC46ECC39D"
+			]
+			description: ["You're gonna want a big supply of this, use silk touch to move spawners and upgrade them with Apotheosis for best results and melt a &lLOT &rof blazes."]
+			id: "3050018DBF1D6C69"
+			subtitle: "Smokin!"
+			tasks: [{
+				id: "0B8CF1B280731092"
+				item: "tconstruct:blazing_blood_bucket"
+				type: "item"
+			}]
+			title: "Hot Blooded"
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4F8A65DDFA891B8E"]
+			id: "6F00514364FA2F79"
+			subtitle: "Throw them at your friends if you want, I'm not your dad."
+			tasks: [
+				{
+					id: "56BA38278B473F0D"
+					item: "tconstruct:nether_grout"
+					type: "item"
+				}
+				{
+					id: "303D796B2E7B8A59"
+					item: "tconstruct:scorched_brick"
+					type: "item"
+				}
+			]
+			title: "Scorched Bricks"
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["33C429EC46ECC39D"]
+			description: ["With these you can use liquid fuel in burners, lava works great for basic heat!"]
+			id: "54491ACCEDF22BFF"
+			subtitle: "Reverse liquid cooling, of course."
+			tasks: [{
+				id: "7F58A66C558FC6A6"
+				item: "createaddition:straw"
+				type: "item"
+			}]
+			title: "Liquid Heating"
+			x: -0.5d
+			y: -1.5d
+		}
+	]
+	title: "Lifeless Logistics Age"
+}

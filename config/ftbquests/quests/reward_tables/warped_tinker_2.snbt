@@ -1,0 +1,36 @@
+{
+	id: "738E34244DFAF0C0"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{
+			item: {
+				Count: 1
+				id: "tconstruct:crafting_station"
+				tag: {
+					texture: "minecraft:stripped_warped_stem"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "tconstruct:tinker_station"
+				tag: {
+					texture: "minecraft:warped_planks"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "tconstruct:part_builder"
+				tag: {
+					texture: "minecraft:warped_planks"
+				}
+			}
+		}
+		{ count: 16, item: "tconstruct:pattern" }
+	]
+	title: "Warped Tinker"
+}

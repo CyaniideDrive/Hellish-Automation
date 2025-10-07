@@ -1,0 +1,418 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "shop"
+	group: "60AF5DD8133AB8D1"
+	hide_quest_until_deps_visible: true
+	icon: "reliquary:fortune_coin"
+	id: "48BFC757C9097D9C"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			can_repeat: true
+			dependencies: ["6D3E8845559976CD"]
+			icon: { Count: 32, id: "thermal:gold_coin" }
+			id: "0C00AF2D373ED122"
+			rewards: [{
+				auto: "no_toast"
+				count: 32
+				id: "2DE87129B63345AA"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
+			subtitle: "Smaller coins for smaller purchases!"
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "1A968EB1064EEC8A"
+				item: "thermal:netherite_coin"
+				type: "item"
+			}]
+			title: "Change Exchange -"
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6D3E8845559976CD"]
+			icon: "thermal:netherite_coin"
+			id: "644EE28328D7F709"
+			rewards: [{
+				id: "1D80BCD6759CD199"
+				item: "thermal:netherite_coin"
+				title: "Something to get you started"
+				type: "item"
+			}]
+			subtitle: "Bigger coins to buy big things!"
+			tasks: [{
+				consume_items: true
+				count: 32L
+				id: "22128443BC25EACE"
+				item: "thermal:gold_coin"
+				optional_task: true
+				type: "item"
+			}]
+			title: "Change Exchange +"
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6D3E8845559976CD"]
+			description: ["If you want something strong it'll cost ya, but it's easier than getting it yourself!"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "1E014643D2ED3A1C"
+			rewards: [{
+				id: "6C3CEA78F4FB301C"
+				item: {
+					Count: 1
+					id: "tconstruct:modifier_worktable"
+					tag: {
+						texture: "create:scorchia"
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Fast track your tools!"
+			tasks: [{
+				id: "651CD19EA1B0A65B"
+				title: "Tinkers' Corner"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7C1D455C83BB0BE3"]
+			description: ["A use for those coins you sometimes get from piglins."]
+			hide_until_deps_complete: true
+			id: "6D3E8845559976CD"
+			rewards: [{
+				id: "31E3F7D90B7B22A2"
+				item: "thermal:netherite_coin"
+				type: "item"
+			}]
+			subtitle: "Capalism :)"
+			tasks: [{
+				id: "3361F5AB5D68AF2D"
+				title: "Time to shop!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["1E014643D2ED3A1C"]
+			description: ["This can only get you luck level 1, but there's no other way to get it in without the overworld..."]
+			icon: "apotheosis:lucky_foot"
+			id: "58AF26CD1E001389"
+			rewards: [{
+				auto: "enabled"
+				id: "45618B9BA3344381"
+				item: {
+					Count: 1
+					id: "tconstruct:modifier_crystal"
+					tag: {
+						modifier: "tconstruct:luck"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "6D72AD250B49FBA1"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
+			title: "Lucky mod!"
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6D3E8845559976CD"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "7D24214A672A2A6B"
+			rewards: [{
+				id: "11BCB0C31984CEE4"
+				item: {
+					Count: 1
+					id: "sophisticatedbackpacks:backpack"
+					tag: {
+						borderColor: 3949738
+						clothColor: 3949738
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Backpack and Storage upgrades sold here!"
+			tasks: [{
+				id: "2D84F4B3BBD4C8BA"
+				title: "Backpack Lane"
+				type: "checkmark"
+			}]
+			title: "Sophisticated Street"
+			x: -7.5d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["1E014643D2ED3A1C"]
+			icon: "minecraft:wet_sponge"
+			id: "1823CC68EA35F31F"
+			rewards: [{
+				auto: "enabled"
+				id: "0785FFB79790A657"
+				item: "minecraft:wet_sponge"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "4D0A1077AB08B4CD"
+				item: "thermal:netherite_coin"
+				type: "item"
+			}]
+			title: "Mod Remover"
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6D3E8845559976CD"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "1405B786BB0BAD9B"
+			subtitle: "Can't find it in hell or got back luck? I got you."
+			tasks: [{
+				id: "7E1DAF497BA0CA14"
+				title: "Lootland"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["1405B786BB0BAD9B"]
+			icon: "minecraft:netherite_upgrade_smithing_template"
+			id: "3ED5399F557ED827"
+			rewards: [{
+				auto: "enabled"
+				id: "6DE34D80D1C5B676"
+				item: "minecraft:netherite_upgrade_smithing_template"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "2869D702D880748D"
+				item: "thermal:netherite_coin"
+				type: "item"
+			}]
+			title: "Netherite Template"
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6D3E8845559976CD"]
+			description: [
+				"Recycle unwanted ingots into gold to trade to piglins again!"
+				""
+				"&4Will consume ALL ingots in inventory on submit."
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:gold_ingot"
+			id: "7FE728BE3F79B3D2"
+			rewards: [{
+				auto: "no_toast"
+				count: 32
+				id: "3DE9AA65000B9490"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			subtitle: "Gold for scraps!"
+			tasks: [{
+				consume_items: true
+				count: 128L
+				id: "75E50A750724ED3A"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:trade_in_ingots)"
+					}
+				}
+				title: "Any #kubejs:trade_in_ingots"
+				type: "item"
+			}]
+			title: "Unwanted ingot trade-in."
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6D3E8845559976CD"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "07B798F76D481AA5"
+			rewards: [{
+				id: "403811F482B3059E"
+				item: "toolbelt:belt"
+				type: "item"
+			}]
+			subtitle: "Equip yourself well!"
+			tasks: [{
+				id: "15470138E6CC234A"
+				title: "Gear Gallery"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["07B798F76D481AA5"]
+			icon: "toolbelt:pouch"
+			id: "4257188CAABCA940"
+			rewards: [{
+				auto: "enabled"
+				id: "65EF348E95CF7BED"
+				item: "toolbelt:pouch"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "1753123B87B75007"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
+			title: "Tool Pouch"
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6D3E8845559976CD"]
+			description: [
+				"Recycle unwanted ingots into gold to trade to piglins again!"
+				""
+				"&4Will consume ALL ingots in inventory on submit."
+			]
+			hide_dependency_lines: true
+			icon: "create_new_age:overcharged_gold"
+			id: "305802133474FDE9"
+			rewards: [{
+				auto: "no_toast"
+				count: 32
+				id: "68A589E7BE210689"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			subtitle: "Gold for shinies!"
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "61CCEB3C2E3261EE"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:rare_trade_in_ingots)"
+					}
+				}
+				title: "Any #kubejs:rare_trade_in_ingots"
+				type: "item"
+			}]
+			title: "Unwanted ingot trade-in (rare)"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7D24214A672A2A6B"]
+			icon: "sophisticatedbackpacks:upgrade_base"
+			id: "42A96C4242103F03"
+			rewards: [{
+				auto: "enabled"
+				count: 2
+				id: "32F5D5AFAE3B456E"
+				item: "sophisticatedbackpacks:upgrade_base"
+				type: "item"
+			}]
+			subtitle: "Abit of DIY"
+			tasks: [{
+				consume_items: true
+				count: 3L
+				id: "486C5979D44EB3F2"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
+			title: "Upgrade Base (Backpack)"
+			x: -8.0d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7D24214A672A2A6B"]
+			icon: "sophisticatedstorage:upgrade_base"
+			id: "220224186DAFD18D"
+			rewards: [{
+				auto: "enabled"
+				count: 2
+				id: "63A0929470EE27D7"
+				item: "sophisticatedstorage:upgrade_base"
+				type: "item"
+			}]
+			subtitle: "A little DIY"
+			tasks: [{
+				consume_items: true
+				count: 3L
+				id: "76DB9870950E7C46"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
+			title: "Upgrade Base (Storage)"
+			x: -7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6D3E8845559976CD"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "78C59D3D07D5B189"
+			subtitle: "Yer a wizzard!"
+			tasks: [{
+				id: "6867198E2F8DC657"
+				title: "Magic Mall"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["78C59D3D07D5B189"]
+			id: "309C0B053A0A9BAC"
+			rewards: [{
+				auto: "enabled"
+				id: "3F262312B93CA152"
+				item: "botania:black_lotus"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "3C107DD5AD44FD64"
+				item: "thermal:netherite_coin"
+				type: "item"
+			}]
+			title: "Instant Mana"
+			x: 4.0d
+			y: 3.0d
+		}
+	]
+	title: "Shop"
+}

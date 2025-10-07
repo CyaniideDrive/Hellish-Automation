@@ -1,0 +1,456 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "brass_age"
+	group: "54B033DC4F3712FE"
+	hide_quest_until_deps_visible: true
+	icon: "create:brass_casing"
+	id: "5E6226F6538D9706"
+	images: [{
+		height: 1.0d
+		hover: ["Get ready to mix a lot of alloys!"]
+		image: "create:item/whisk"
+		rotation: 0.0d
+		width: 1.0d
+		x: 3.0d
+		y: -2.5d
+	}]
+	order_index: 2
+	quest_links: [{
+		id: "10625E9A687034D2"
+		linked_quest: "2ECE20020E9FDF80"
+		x: 1.5d
+		y: -1.0d
+	}]
+	quests: [
+		{
+			dependencies: ["550C4117E36E2CD7"]
+			id: "62FF381DC350C99A"
+			subtitle: "Welding... kind of?"
+			tasks: [{
+				id: "075FB6435E472149"
+				item: "kubejs:brass_frame"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1BB404BE1F3187A3"]
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
+			icon: "create:brass_block"
+			id: "5E9C0345B78AC4D0"
+			subtitle: "Now it's really gonna pick up!"
+			tasks: [{
+				id: "3D810862DEA3A283"
+				title: "Brass Tech"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"2ECE20020E9FDF80"
+				"5E9C0345B78AC4D0"
+			]
+			id: "550C4117E36E2CD7"
+			subtitle: "New alloy!"
+			tasks: [{
+				id: "548ECD737E29A6D8"
+				item: "tconstruct:molten_brass_bucket"
+				type: "item"
+			}]
+			title: "Brass Mixer"
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"1521F9295436CB74"
+				"5E9C0345B78AC4D0"
+			]
+			id: "0A2CC8F7670692B0"
+			subtitle: "Debarked and ready!"
+			tasks: [{
+				id: "7D9A68C4C30B224E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:stripped_livingwood)"
+					}
+				}
+				title: "Any #kubejs:stripped_livingwood"
+				type: "item"
+			}]
+			title: "Stripped Livingwood"
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"62FF381DC350C99A"
+				"0A2CC8F7670692B0"
+			]
+			id: "24018C6D96E328D4"
+			subtitle: "I think it's about to say, \"I love you.\""
+			tasks: [{
+				id: "03A7D95A56EA022D"
+				item: "create:brass_casing"
+				type: "item"
+			}]
+			title: "Living Casing"
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5E9C0345B78AC4D0"]
+			dependency_requirement: "one_completed"
+			id: "02E6F0EB04FC2EF0"
+			subtitle: "Soul food."
+			tasks: [{
+				id: "778DED937068A7AB"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"02E6F0EB04FC2EF0"
+				"2ECE20020E9FDF80"
+			]
+			id: "22191B64BCC067B0"
+			subtitle: "Needed to make portals."
+			tasks: [{
+				id: "4EC2BC710D56F37A"
+				item: "tconstruct:molten_enderium_bucket"
+				type: "item"
+			}]
+			title: "Enderium Mixer"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7C974AF735E1B188"
+				"5D6A3D461566CA4D"
+			]
+			dependency_requirement: "one_completed"
+			id: "394C7DC9617D8227"
+			subtitle: "The strength!"
+			tasks: [{
+				id: "6841D49AA7B865B5"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			title: "Netherite"
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"22191B64BCC067B0"
+				"394C7DC9617D8227"
+				"24018C6D96E328D4"
+			]
+			description: [
+				"&4You can only pick these back up with a netherite tool!"
+				""
+				"You need to go get some enderslime to purify into skyslime, get ready for a fight, that darn dragon is still there!"
+			]
+			icon: "minecraft:end_portal_frame"
+			id: "387977894AC93EE5"
+			subtitle: "Do not pass go, go directly to end."
+			tasks: [
+				{
+					count: 12L
+					id: "39DDE1D7F8EDF39D"
+					item: "minecraft:end_portal_frame"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "69062BBA4438CA8E"
+					item: { Count: 12, id: "minecraft:ender_eye" }
+					type: "item"
+				}
+			]
+			title: "Artificial End Portal"
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"387977894AC93EE5"
+				"550C4117E36E2CD7"
+			]
+			id: "4EEA6AF6046C9294"
+			subtitle: "With our..."
+			tasks: [
+				{
+					id: "567A32F932E360E2"
+					item: "kubejs:queenslime_gear"
+					type: "item"
+				}
+				{
+					id: "7367A821EA821538"
+					item: "kubejs:slimesteel_gear"
+					type: "item"
+				}
+				{
+					id: "58E3A4C37205276A"
+					item: "kubejs:cinderslime_gear"
+					type: "item"
+				}
+			]
+			title: "Gear Trio"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4EEA6AF6046C9294"]
+			id: "485C0E2BF3CD790E"
+			subtitle: "Powers combined..."
+			tasks: [{
+				id: "356644E687DBB3FE"
+				item: "kubejs:incomplete_slime_gear_1"
+				type: "item"
+			}]
+			title: "Mixed up gears."
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["485C0E2BF3CD790E"]
+			id: "7226399545CF4EB5"
+			subtitle: "We will..."
+			tasks: [{
+				id: "145D76330A5FAC67"
+				item: "kubejs:forgeslime_gear"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"7226399545CF4EB5"
+				"24018C6D96E328D4"
+			]
+			description: ["This can make Crafters, Speed Controllers, Hypertubes, and other advanced machniery!"]
+			id: "1181D3D5159AE2AD"
+			rewards: [{
+				count: 8
+				id: "0428B0FD6B5BEAD3"
+				item: "kubejs:forgeslime_gear"
+				type: "item"
+			}]
+			subtitle: "Become kit!"
+			tasks: [{
+				id: "0DAFF9A4DC41D9DF"
+				item: "kubejs:living_kit"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5E9C0345B78AC4D0"
+				"4C47FE537F0EB842"
+			]
+			description: ["You'll need a good bit of steel, might be good to set up coke production early with what the Piglins have traded to you."]
+			id: "2852BFA440CE5381"
+			subtitle: "Great for tools!"
+			tasks: [{
+				id: "460F6BF7F4BCC3CB"
+				item: "tconstruct:molten_steel_bucket"
+				type: "item"
+			}]
+			title: "Steel Mixer"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["75DD97D3105634A9"]
+			id: "3AC36E5499082AF9"
+			subtitle: "Aw man, extra steps?"
+			tasks: [{
+				id: "029508CA639D71FE"
+				item: "kubejs:weak_netherite_bucket"
+				type: "item"
+			}]
+			title: "Weak Netherite"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"3AC36E5499082AF9"
+				"2852BFA440CE5381"
+			]
+			id: "7C974AF735E1B188"
+			subtitle: "Steelier than usual..."
+			tasks: [{
+				id: "10071A5D55B7ADC3"
+				item: "tconstruct:molten_netherite_bucket"
+				type: "item"
+			}]
+			title: "Netherite Mixer"
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1181D3D5159AE2AD"]
+			id: "665750381FD7A946"
+			rewards: [{
+				id: "01329C8EA4D583FD"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6C63CCC467A1A584"
+				title: "Chapter Complete!"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"25C75512F03B469B"
+				"1181D3D5159AE2AD"
+			]
+			description: [
+				"It's a good idea to get an infinite source of ancient debris."
+				""
+				"Most other ores are also drillable."
+				""
+				"All ores require some hot fluid to mine, most only take lava, but the fancier ones need something more potent..."
+			]
+			id: "212BE17333BB1420"
+			ignore_reward_blocking: true
+			optional: true
+			rewards: [
+				{
+					id: "00530DF156F416C2"
+					item: "createoreexcavation:vein_finder"
+					type: "item"
+				}
+				{
+					id: "020723B2AC1A9DFC"
+					item: "createoreexcavation:vein_atlas"
+					type: "item"
+				}
+				{
+					id: "1400C29E056A63E7"
+					item: {
+						Count: 1
+						id: "create:copper_backtank"
+						tag: {
+							Air: 900
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Giga drill breaker!"
+			tasks: [
+				{
+					id: "68656A19B0AA03EE"
+					item: "createoreexcavation:drilling_machine"
+					type: "item"
+				}
+				{
+					id: "12C33A38C30CEC1B"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(createoreexcavation:drills)"
+						}
+					}
+					title: "Any #createoreexcavation:drills"
+					type: "item"
+				}
+				{
+					id: "15294920F87B678B"
+					item: "createoreexcavation:sample_drill"
+					type: "item"
+				}
+			]
+			title: "Auto Ore"
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["24018C6D96E328D4"]
+			description: ["Lava not included."]
+			id: "25C75512F03B469B"
+			optional: true
+			subtitle: "Infinite ores at a great price!"
+			tasks: [{
+				count: 25L
+				id: "7E7BD89303B6C3BA"
+				item: { Count: 25, id: "create:mechanical_crafter" }
+				type: "item"
+			}]
+			title: "Make &lThe Drill&r™"
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5E9C0345B78AC4D0"]
+			description: ["You get a tiny bit of finished netherite by smelting debris in a foundry too..."]
+			id: "75DD97D3105634A9"
+			subtitle: "Diggy diggy hole by hand or bed for now..."
+			tasks: [{
+				id: "58CF4518B4535D68"
+				item: "minecraft:netherite_scrap"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["75DD97D3105634A9"]
+			description: ["Melting Ancient Debris in a foundry gives a small amount of finished Netherite."]
+			icon: "tconstruct:foundry_controller"
+			id: "5D6A3D461566CA4D"
+			optional: true
+			subtitle: "Speedrun?"
+			tasks: [{
+				id: "2C9C58AD22A919CA"
+				title: "Fast Track"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5E9C0345B78AC4D0"]
+			id: "4C47FE537F0EB842"
+			subtitle: "The legal kind."
+			tasks: [
+				{
+					id: "4AD764943B379651"
+					item: "thermal:coal_coke"
+					type: "item"
+				}
+				{
+					id: "17B01FEF0A0ED5CA"
+					item: "kubejs:coke_dust"
+					type: "item"
+				}
+			]
+			title: "Powdered coke"
+			x: 0.0d
+			y: 0.0d
+		}
+	]
+	title: "Living Age"
+}

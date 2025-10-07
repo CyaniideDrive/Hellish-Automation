@@ -1,0 +1,1316 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "dangerous_beginnings"
+	group: "54B033DC4F3712FE"
+	hide_quest_until_deps_visible: true
+	icon: "create:andesite_casing"
+	id: "176C8407ED5F51D5"
+	images: [
+		{
+			height: 1.0d
+			hover: [
+				"Nether Portals can't take you out,"
+				"at least not yet."
+				""
+				"For now if you use one you go to the world spawn,"
+				"so that could still be useful."
+			]
+			image: "minecraft:block/nether_portal"
+			rotation: 0.0d
+			width: 1.0d
+			x: -8.5d
+			y: 0.5d
+		}
+		{
+			height: 3.0d
+			hover: [
+				"Purifying is a core mechanic in this pack"
+				"I hope you're ready for that."
+			]
+			image: "botania:textures/gui/entries/pure_daisy.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			height: 1.0d
+			hover: [
+				"Lava is infinite like water"
+				"so you can use Thermalilies like Hydrangeas."
+			]
+			image: "minecraft:block/lava_still"
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.5d
+			y: 3.5d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Have some stuff in case your spawn is less than ideal."
+				"{@pagebreak}"
+				"JEI is your friend, not every step will be explained for every quest."
+				"{@pagebreak}"
+			]
+			hide_dependent_lines: true
+			icon: "minecraft:crimson_nylium"
+			id: "60AFE79ACB2DD5DB"
+			rewards: [
+				{
+					count: 128
+					id: "7D38AF90B21926FD"
+					item: "minecraft:netherrack"
+					type: "item"
+				}
+				{
+					id: "2CC49FFCD4139337"
+					item: {
+						Count: 1
+						id: "minecraft:wooden_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Mind your step, the lava is hot!"
+			tasks: [{
+				id: "3930C975807E5C69"
+				type: "checkmark"
+			}]
+			title: "Welcome to the Nether!"
+			x: -7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["60AFE79ACB2DD5DB"]
+			icon: "minecraft:crimson_stem"
+			id: "5854C8F85E52E972"
+			rewards: [{
+				id: "43A830D2829E8EFC"
+				item: {
+					Count: 1
+					id: "create:cardboard_package_10x12"
+					tag: {
+						Items: {
+							Items: [
+								{
+									Count: 1b
+									Slot: 0
+									id: "tconstruct:crafting_station"
+									tag: {
+										texture: "nethers_exoticism:stripped_jabuticaba_log"
+									}
+								}
+								{
+									Count: 1b
+									Slot: 1
+									id: "tconstruct:tinker_station"
+									tag: {
+										texture: "nethers_exoticism:jaboticaba_planks"
+									}
+								}
+								{
+									Count: 1b
+									Slot: 2
+									id: "tconstruct:part_builder"
+									tag: {
+										texture: "nethers_exoticism:jaboticaba_planks"
+									}
+								}
+								{
+									Count: 16b
+									Slot: 3
+									id: "tconstruct:pattern"
+								}
+								{
+									Count: 1b
+									Slot: 4
+									id: "tconstruct:materials_and_you"
+								}
+								{
+									Count: 1b
+									Slot: 5
+									id: "tconstruct:tinkers_gadgetry"
+								}
+							]
+							Size: 9
+						}
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Tinkering Set\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Technically they're trees."
+			tasks: [{
+				id: "194E3EE461BB26EC"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:logs)"
+					}
+				}
+				title: "Any #minecraft:logs"
+				type: "item"
+			}]
+			title: "Punching Trees in Hell"
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60AFE79ACB2DD5DB"]
+			description: ["Using this fancy fertilizer on Nylium or soil will grow shimmering mushrooms!"]
+			id: "29A9D7D8AADD5314"
+			rewards: [
+				{
+					count: 8
+					id: "6AC98170AE7362BA"
+					item: "botania:fertilizer"
+					type: "item"
+				}
+				{
+					id: "00671FFA3E6436B0"
+					item: "botania:lexicon"
+					type: "item"
+				}
+			]
+			subtitle: "Mushrooms love the stuff!"
+			tasks: [{
+				id: "073A3570449CF16D"
+				item: "botania:fertilizer"
+				type: "item"
+			}]
+			title: "Mystical Meal"
+			x: -5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3915701AE45B3474"]
+			description: ["You need Resurgent Soil to plant this on."]
+			icon: "botania:pure_daisy"
+			id: "1521F9295436CB74"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4C27DE3AB40D5BDF"
+				table_id: 6195680378209165397L
+				type: "choice"
+			}]
+			subtitle: "Clean things up a bit."
+			tasks: [{
+				id: "75D81FEF0C747724"
+				item: "botania:pure_daisy"
+				type: "item"
+			}]
+			title: "Purification Ritual"
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"2FB2490779C5D647"
+				"29A9D7D8AADD5314"
+			]
+			description: [
+				"You can use vanilla mushrooms in place of seeds for this."
+				""
+				"&4Don't lose the bucket."
+				"{@pagebreak}"
+			]
+			id: "3915701AE45B3474"
+			rewards: [{
+				id: "7FB6C295498B17C9"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			subtitle: "Bring some life to this hellscape."
+			tasks: [{
+				id: "6ABEC4F19B29D433"
+				item: "botania:apothecary_deepslate"
+				type: "item"
+			}]
+			title: "Flower Maker"
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["60AFE79ACB2DD5DB"]
+			description: ["They may be annoying to hunt but their tears seem pretty watery..."]
+			id: "2FB2490779C5D647"
+			rewards: [{
+				id: "3B728787270F46FC"
+				item: "minecraft:ghast_tear"
+				type: "item"
+			}]
+			subtitle: "I cry every time."
+			tasks: [{
+				entity: "minecraft:ghast"
+				icon: "minecraft:ghast_tear"
+				id: "009E587D34526842"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Cry me a river"
+			x: -5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5854C8F85E52E972"]
+			description: ["You can also make Nether Quartz tools for now, I won't judge."]
+			id: "30B492B85B01F90E"
+			optional: true
+			rewards: [{
+				id: "723D906F38874DEE"
+				item: {
+					Count: 1
+					id: "tconstruct:modifier_crystal"
+					tag: {
+						modifier: "tconstruct:diamond"
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "The bare minimum."
+			tasks: [
+				{
+					id: "7B553C37C6B59876"
+					item: {
+						Count: 1
+						id: "tconstruct:hand_axe"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "66476B1E150CCCDF"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:pickaxes)"
+						}
+					}
+					optional_task: true
+					title: "Tinkers Pickaxe Reccommended"
+					type: "item"
+				}
+			]
+			title: "Toolmaker"
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"2E18602701F828A8"
+				"33E3FB3C4F34E2F7"
+			]
+			description: [
+				"Sending air through a pure daisy with a fan will allow you to purify in bulk."
+				""
+				"Non-blocks can only be purified by fan."
+			]
+			icon: "create:propeller"
+			id: "689F4A712ECCCFE5"
+			optional: true
+			subtitle: "I got some pollen in my nose."
+			tasks: [
+				{
+					id: "302BD35743049ED2"
+					item: "create:encased_fan"
+					type: "item"
+				}
+				{
+					id: "2BB5CE96980E2824"
+					item: "botania:pure_daisy"
+					type: "item"
+				}
+			]
+			title: "Automatic Purifying"
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"43EB1724229DB39C"
+				"6F8E99029D593D15"
+			]
+			id: "4AB9F938E8F16E1A"
+			rewards: [{
+				count: 8
+				id: "3EDF8FC8CF889099"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			subtitle: "Flimsy, but good enough."
+			tasks: [{
+				advancement: "create:andesite_casing"
+				criterion: ""
+				id: "32D0A069EACD7EB7"
+				type: "advancement"
+			}]
+			title: "Lifeless Casing"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1ACB2BE68718ED3A"
+				"0A75F054A3835911"
+			]
+			description: [
+				"You can barter for a lot of good things from Piglins, including basic metals!"
+				"{@pagebreak}"
+				"You get about 1.5 ingots worth of assorted metal nuggets per trade."
+				""
+				"You can also get rare items and coins for shopping in the quest book from these buggers!"
+				"Even diamonds! &7Rarely..."
+				"{@pagebreak}"
+				"Piglins can be picked up if you're wearing gold armor."
+				""
+				"You can also use barterers from the mod if you don't want entities in your automation, stop the lag folks!"
+			]
+			icon: "easy_piglins:piglin"
+			id: "7C1D455C83BB0BE3"
+			rewards: [{
+				id: "6AD9F6E75D2B8A05"
+				item: "easy_piglins:barterer"
+				type: "item"
+			}]
+			subtitle: "Good deal, good deal."
+			tasks: [
+				{
+					id: "7590C75AE4A32353"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:armor/gold)"
+						}
+					}
+					title: "Any #forge:armor/gold"
+					type: "item"
+				}
+				{
+					id: "5FC497E4800D5EB4"
+					item: "easy_piglins:piglin"
+					type: "item"
+				}
+			]
+			title: "Trading up"
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"60AFE79ACB2DD5DB"
+				"5854C8F85E52E972"
+			]
+			id: "0E83CB2AB483A393"
+			rewards: [{
+				id: "44C2DC0BB5E01F7F"
+				item: {
+					Count: 1
+					id: "create:cardboard_package_10x8"
+					tag: {
+						Items: {
+							Items: [
+								{
+									Count: 1b
+									Slot: 0
+									id: "minecraft:wooden_hoe"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 16b
+									Slot: 1
+									id: "mynethersdelight:resurgent_soil"
+								}
+								{
+									Count: 32b
+									Slot: 2
+									id: "minecraft:bone_meal"
+								}
+							]
+							Size: 9
+						}
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Simple Farming Kit\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "The souls of the innocent make a good fertilizer"
+			tasks: [{
+				id: "4C51534F35D688B7"
+				item: "mynethersdelight:resurgent_soil"
+				type: "item"
+			}]
+			title: "Soul food"
+			x: -5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"21D2B1E39348CB9A"
+				"6F8E99029D593D15"
+			]
+			description: [
+				"Congrats! You can automate now!"
+				"Here's set of tools you can \"borrow\" I promise it's owner doesn't need it back."
+			]
+			id: "2E18602701F828A8"
+			rewards: [{
+				id: "3047715872CF8613"
+				item: {
+					Count: 1
+					id: "create:brown_toolbox"
+					tag: {
+						Inventory: {
+							Compartments: [
+								{
+									Count: 1b
+									id: "tconstruct:pickaxe"
+									tag: {
+										RepairCost: 0
+										display: {
+											Name: "{\"text\":\"Engineer's Pickaxe\"}"
+										}
+										tic_materials: [
+											"tcintegrations:brass"
+											"tconstruct:treated_wood"
+											"tconstruct:treated_wood"
+										]
+										tic_modifiers: [
+											{
+												level: 1
+												name: "tcintegrations:moderate"
+											}
+											{
+												level: 2
+												name: "tconstruct:preserved"
+											}
+											{
+												level: 1
+												name: "tconstruct:pierce"
+											}
+										]
+										tic_persistent: { }
+										tic_stats: {
+											"tconstruct:attack_damage": 3.25f
+											"tconstruct:attack_speed": 1.08f
+											"tconstruct:durability": 1138.8f
+											"tconstruct:harvest_tier": "minecraft:diamond"
+											"tconstruct:mining_speed": 5.3999996f
+										}
+										tic_volatile_data: {
+											abilities: 1
+											upgrades: 3
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "create:goggles"
+								}
+								{
+									Count: 1b
+									id: "tconstruct:dagger"
+									tag: {
+										tic_materials: [
+											"tcintegrations:brass"
+											"tconstruct:treated_wood"
+										]
+										tic_modifiers: [
+											{
+												level: 1
+												name: "tcintegrations:moderate"
+											}
+											{
+												level: 1
+												name: "tconstruct:preserved"
+											}
+											{
+												level: 1
+												name: "tconstruct:offhand_attack"
+											}
+											{
+												level: 1
+												name: "tconstruct:padded"
+											}
+											{
+												level: 1
+												name: "tconstruct:silky_shears"
+											}
+										]
+										tic_multipliers: {
+											"tconstruct:attack_damage": 0.65f
+											"tconstruct:durability": 0.75f
+											"tconstruct:mining_speed": 0.75f
+										}
+										tic_name: "Engineer's Pocket Blade"
+										tic_persistent: { }
+										tic_stats: {
+											"tconstruct:attack_damage": 3.4125f
+											"tconstruct:attack_speed": 1.8f
+											"tconstruct:block_amount": 10.0f
+											"tconstruct:durability": 755.55f
+											"tconstruct:harvest_tier": "minecraft:diamond"
+											"tconstruct:mining_speed": 4.0499997f
+											"tconstruct:use_item_speed": 1.0f
+										}
+										tic_volatile_data: {
+											abilities: 1
+											"tconstruct:duel_wielding": 1b
+											upgrades: 3
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "create:wrench"
+									tag: {
+										RepairCost: 0
+										display: {
+											Name: "{\"text\":\"Engineer's Wrench\"}"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "tconstruct:hand_axe"
+									tag: {
+										tic_materials: [
+											"tcintegrations:brass"
+											"tconstruct:treated_wood"
+											"tconstruct:treated_wood"
+										]
+										tic_modifiers: [
+											{
+												level: 1
+												name: "tcintegrations:moderate"
+											}
+											{
+												level: 2
+												name: "tconstruct:preserved"
+											}
+											{
+												level: 1
+												name: "tconstruct:stripping"
+											}
+										]
+										tic_name: "Engineer's Hand Axe"
+										tic_persistent: { }
+										tic_stats: {
+											"tconstruct:attack_damage": 8.25f
+											"tconstruct:attack_speed": 0.80999994f
+											"tconstruct:durability": 1138.8f
+											"tconstruct:harvest_tier": "minecraft:diamond"
+											"tconstruct:mining_speed": 5.3999996f
+										}
+										tic_volatile_data: {
+											abilities: 1
+											upgrades: 3
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "create:copper_diving_boots"
+									tag: {
+										Damage: 0
+										RepairCost: 0
+										display: {
+											Name: "{\"text\":\"Anti-Belt Boots\"}"
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "minecraft:air"
+								}
+								{
+									Count: 1b
+									id: "create:super_glue"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+							Items: [
+								{
+									Count: 1b
+									Slot: 0
+									id: "tconstruct:pickaxe"
+									tag: {
+										Damage: 0
+										tic_broken: 0b
+										tic_materials: [
+											"tcintegrations:brass"
+											"tconstruct:treated_wood"
+											"tconstruct:treated_wood"
+										]
+										tic_modifiers: [
+											{
+												level: 1
+												name: "tcintegrations:moderate"
+											}
+											{
+												level: 2
+												name: "tconstruct:preserved"
+											}
+											{
+												level: 1
+												name: "tconstruct:pierce"
+											}
+										]
+										tic_name: "Engineer's Pickaxe"
+										tic_persistent: { }
+										tic_stats: {
+											"tconstruct:attack_damage": 3.25f
+											"tconstruct:attack_speed": 1.08f
+											"tconstruct:durability": 1138.8f
+											"tconstruct:harvest_tier": "minecraft:diamond"
+											"tconstruct:mining_speed": 5.3999996f
+										}
+										tic_volatile_data: {
+											abilities: 1
+											upgrades: 3
+										}
+									}
+								}
+								{
+									Count: 1b
+									Slot: 4
+									id: "create:goggles"
+								}
+								{
+									Count: 1b
+									Slot: 8
+									id: "tconstruct:dagger"
+									tag: {
+										Damage: 0
+										tic_broken: 0b
+										tic_materials: [
+											"tcintegrations:brass"
+											"tconstruct:treated_wood"
+										]
+										tic_modifiers: [
+											{
+												level: 1
+												name: "tcintegrations:moderate"
+											}
+											{
+												level: 1
+												name: "tconstruct:preserved"
+											}
+											{
+												level: 1
+												name: "tconstruct:offhand_attack"
+											}
+											{
+												level: 1
+												name: "tconstruct:padded"
+											}
+											{
+												level: 1
+												name: "tconstruct:silky_shears"
+											}
+										]
+										tic_multipliers: {
+											"tconstruct:attack_damage": 0.65f
+											"tconstruct:durability": 0.75f
+											"tconstruct:mining_speed": 0.75f
+										}
+										tic_name: "Engineer's Pocket Blade"
+										tic_persistent: { }
+										tic_stats: {
+											"tconstruct:attack_damage": 3.4125f
+											"tconstruct:attack_speed": 1.8f
+											"tconstruct:block_amount": 10.0f
+											"tconstruct:durability": 755.55f
+											"tconstruct:harvest_tier": "minecraft:diamond"
+											"tconstruct:mining_speed": 4.0499997f
+											"tconstruct:use_item_speed": 1.0f
+										}
+										tic_volatile_data: {
+											abilities: 1
+											"tconstruct:duel_wielding": 1b
+											upgrades: 3
+										}
+									}
+								}
+								{
+									Count: 1b
+									Slot: 12
+									id: "create:wrench"
+									tag: {
+										RepairCost: 0
+										display: {
+											Name: "{\"text\":\"Engineer's Wrench\"}"
+										}
+									}
+								}
+								{
+									Count: 1b
+									Slot: 16
+									id: "tconstruct:hand_axe"
+									tag: {
+										Damage: 0
+										tic_broken: 0b
+										tic_materials: [
+											"tcintegrations:brass"
+											"tconstruct:treated_wood"
+											"tconstruct:treated_wood"
+										]
+										tic_modifiers: [
+											{
+												level: 1
+												name: "tcintegrations:moderate"
+											}
+											{
+												level: 2
+												name: "tconstruct:preserved"
+											}
+											{
+												level: 1
+												name: "tconstruct:stripping"
+											}
+										]
+										tic_name: "Engineer's Hand Axe"
+										tic_persistent: { }
+										tic_stats: {
+											"tconstruct:attack_damage": 8.25f
+											"tconstruct:attack_speed": 0.80999994f
+											"tconstruct:durability": 1138.8f
+											"tconstruct:harvest_tier": "minecraft:diamond"
+											"tconstruct:mining_speed": 5.3999996f
+										}
+										tic_volatile_data: {
+											abilities: 1
+											upgrades: 3
+										}
+									}
+								}
+								{
+									Count: 1b
+									Slot: 20
+									id: "create:copper_diving_boots"
+									tag: {
+										Damage: 0
+										RepairCost: 0
+										display: {
+											Name: "{\"text\":\"Anti-Belt Boots\"}"
+										}
+									}
+								}
+								{
+									Count: 1b
+									Slot: 28
+									id: "create:super_glue"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+							Size: 32
+						}
+						UniqueId: [I;
+							504130333
+							1105020220
+							-1677133266
+							-1679320843
+						]
+						display: {
+							Name: "{\"text\":\"\\\"Borrowed\\\" Toolbox\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Needs some manpower."
+			tasks: [
+				{
+					id: "7A03C4039B1B74EE"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "49CDA8ACBB0866BF"
+					item: "create:mechanical_press"
+					type: "item"
+				}
+				{
+					id: "7024A27F27BA4A1B"
+					item: "create:basin"
+					type: "item"
+				}
+				{
+					id: "4344E490487F25A4"
+					item: "create:depot"
+					type: "item"
+				}
+				{
+					id: "69FAB4707653A8E9"
+					item: "create:deployer"
+					type: "item"
+				}
+			]
+			title: "Beginner Workshop"
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"1ACB2BE68718ED3A"
+				"4AB9F938E8F16E1A"
+				"3B08B4F1C634D236"
+			]
+			icon: "thermal:quartz_gear"
+			id: "20E5FD1EB9AA0E75"
+			subtitle: "It's a start."
+			tasks: [
+				{
+					id: "3E0F76972EBFE99B"
+					item: "kubejs:gold_ring"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0C346454422FC559"
+					item: "kubejs:rounded_quartz"
+					type: "item"
+				}
+				{
+					id: "025D80BEE1E93270"
+					item: "thermal:quartz_gear"
+					type: "item"
+				}
+			]
+			title: "First Gears"
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["30B492B85B01F90E"]
+			dependency_requirement: "one_started"
+			description: [
+				"Direct gold rates from nether ore have been massively buffed."
+				"{@pagebreak}"
+			]
+			id: "1ACB2BE68718ED3A"
+			rewards: [{
+				id: "682D047D3F8069D5"
+				item: {
+					Count: 1
+					id: "minecraft:golden_pickaxe"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:unbreaking"
+							lvl: 2s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "One horse town still half asleep ♪"
+			tasks: [{
+				id: "1AD557D1CEBA4BF7"
+				item: "minecraft:raw_gold"
+				type: "item"
+			}]
+			title: "Gold Rush"
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"4AB9F938E8F16E1A"
+				"20E5FD1EB9AA0E75"
+				"3B08B4F1C634D236"
+			]
+			description: ["These can make shafts, gearboxes, gears, and other kinetic machinery!"]
+			id: "21D2B1E39348CB9A"
+			rewards: [{
+				count: 8
+				id: "1EDC91C9DD4A4DC5"
+				item: "thermal:quartz_gear"
+				type: "item"
+			}]
+			subtitle: "Time for some real progress."
+			tasks: [{
+				id: "32C5D50320EAC76C"
+				item: "kubejs:lifeless_kit"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2FB2490779C5D647"]
+			description: [
+				"&4Warning do not actually eat."
+				"{@pagebreak}"
+				"Pitaya Stems are a great early source for this."
+				""
+				"One tear is also enough to hydrate infinite pulp."
+				"Stones used for pressing the cardboard are also not consumed."
+			]
+			icon: "create:cardboard"
+			id: "43EB1724229DB39C"
+			rewards: [{
+				id: "194A73E0F3D9A5C9"
+				item: {
+					Count: 1
+					id: "create:cardboard_package_10x12"
+					tag: {
+						Items: {
+							Items: [
+								{
+									Count: 1b
+									Slot: 0
+									id: "create:cardboard_helmet"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									Slot: 1
+									id: "create:cardboard_chestplate"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									Slot: 2
+									id: "create:cardboard_leggings"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									Slot: 3
+									id: "create:cardboard_boots"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									Slot: 4
+									id: "create:cardboard_sword"
+								}
+							]
+							Size: 9
+						}
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Cardboard Equipment Set\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "All natural flavor."
+			tasks: [
+				{
+					id: "1D6703BFF7DCB94C"
+					item: "create:pulp"
+					type: "item"
+				}
+				{
+					id: "21BAA5C8CDCF1AF4"
+					item: "create:cardboard"
+					type: "item"
+				}
+				{
+					id: "6C23A87E4DE3F14B"
+					item: "create:cardboard_block"
+					type: "item"
+				}
+			]
+			title: "Cardboard Production"
+			x: -4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"2E18602701F828A8"
+				"21D2B1E39348CB9A"
+			]
+			id: "69655D406E9A0EF6"
+			rewards: [
+				{
+					id: "5E49D03A7423EF64"
+					item: "supplementaries:confetti_popper"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "64D9DCBE4285A97B"
+					ignore_reward_blocking: true
+					stage: "chapter1"
+					type: "gamestage"
+				}
+			]
+			subtitle: "Now things can really get going!"
+			tasks: [{
+				id: "7FE04C03712E137F"
+				title: "Chapter complete!"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6F8E99029D593D15"]
+			description: [
+				"Mixing in better bricks increases alloy yield."
+				"{@pagebreak}"
+				"Nether brick x2 (smelt ash brick)"
+				"Mana brick x4 (infuse nether brick)"
+				""
+				"You can also salvage nether fortresses of course, but their yield seems... lower than normal..."
+			]
+			icon: "irons_spellbooks:arcane_ingot"
+			id: "45B705968A41E578"
+			optional: true
+			rewards: [{
+				count: 4
+				id: "3C0C5742A45CD137"
+				item: "irons_spellbooks:arcane_ingot"
+				type: "item"
+			}]
+			subtitle: "Abundant Rocks"
+			tasks: [{
+				id: "368894483B5E16BF"
+				type: "checkmark"
+			}]
+			title: "Better Yield"
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["30B492B85B01F90E"]
+			dependency_requirement: "one_started"
+			description: ["Cardboard is a great fuel for now."]
+			id: "0A75F054A3835911"
+			subtitle: "Gettin' hotter in here..."
+			tasks: [{
+				id: "72CB513D76CFE1D0"
+				item: "quark:blackstone_furnace"
+				type: "item"
+			}]
+			title: "Fancy Furnace"
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2FB2490779C5D647"]
+			icon: "kubejs:depressed_baby_ghast"
+			id: "51F52CF303BC42B2"
+			optional: true
+			rewards: [{
+				id: "37B90E75AAADA906"
+				item: "reliquary:catalyzing_gland"
+				type: "item"
+			}]
+			subtitle: "You Monster"
+			tasks: [{
+				id: "2FC6299DFC813EFD"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:baby_ghasts)"
+					}
+				}
+				title: "Any #kubejs:baby_ghasts"
+				type: "item"
+			}]
+			title: "Infinite Tears"
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1521F9295436CB74"]
+			id: "74CFDA18F3781EC6"
+			subtitle: "It's aliiive!"
+			tasks: [{
+				id: "1B144118DE580C95"
+				item: "botania:livingrock"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["74CFDA18F3781EC6"]
+			icon: "create:andesite_alloy"
+			id: "6F8E99029D593D15"
+			subtitle: "Aw man you killed the rocks."
+			tasks: [
+				{
+					id: "53CDFE0886C04B4B"
+					item: "botania:livingrock"
+					type: "item"
+				}
+				{
+					id: "651E90A7F5349F22"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:nuggets)"
+						}
+					}
+					title: "Any #kubejs:alloy_nuggets"
+					type: "item"
+				}
+				{
+					id: "37C88F4D1612AE23"
+					item: "supplementaries:ash_brick"
+					type: "item"
+				}
+				{
+					id: "2B2FE7F2C04B94F0"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+			]
+			title: "Life Ended"
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"073A3570449CF16D"
+				"29A9D7D8AADD5314"
+			]
+			description: ["There must be a way to get grass eventually..."]
+			id: "69A0BA4EC676A61A"
+			optional: true
+			rewards: [{
+				id: "673CADEC1435E615"
+				item: "botania:flower_bag"
+				type: "item"
+			}]
+			subtitle: "Real Petals"
+			tasks: [{
+				id: "094DCDEB2DF04E49"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(botania:mystical_flowers)"
+					}
+				}
+				title: "Any #botania:mystical_flowers"
+				type: "item"
+			}]
+			title: "Mystical Flowers"
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6F8E99029D593D15"]
+			id: "3B08B4F1C634D236"
+			subtitle: "You have the power!"
+			tasks: [{
+				id: "3FA1823E2EB683EF"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60AFE79ACB2DD5DB"]
+			description: [
+				"Some items have QoL recipes."
+				""
+				"For example, you can stonecut logs directly into barrels and chests."
+			]
+			id: "73EB596E41B8C4BC"
+			optional: true
+			rewards: [{
+				id: "1E9E297F18860C97"
+				item: "minecraft:stonecutter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7D4077374404D6F8"
+				title: "QoL"
+				type: "checkmark"
+			}]
+			x: -7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1521F9295436CB74"]
+			id: "33E3FB3C4F34E2F7"
+			subtitle: "They can't fly well, but it's enough."
+			tasks: [{
+				id: "498D5A303E3EA8C7"
+				item: "botania:floating_pure_daisy"
+				type: "item"
+			}]
+			title: "Ghastly Flower Pot"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"21D2B1E39348CB9A"
+				"36E948348AF59B43"
+			]
+			description: ["These little things make decoration related blocks, they also look pretty interesting on their own."]
+			id: "68A7E290BB2C8883"
+			optional: true
+			subtitle: "Boxed up and ready to use!"
+			tasks: [{
+				id: "476339C3096AA387"
+				item: "kubejs:3d_casing"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2E18602701F828A8"]
+			description: ["If you want decor on the cheap, make some of these special casings."]
+			id: "36E948348AF59B43"
+			optional: true
+			subtitle: "Blender? More like Compacter!"
+			tasks: [{
+				id: "44C505AF71B3FBB6"
+				item: "kubejs:3d_widget"
+				type: "item"
+			}]
+			title: "3D Modelling"
+			x: 0.0d
+			y: 1.5d
+		}
+	]
+	title: "Lifeless Age"
+}

@@ -1,0 +1,326 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "netherite_age"
+	group: "54B033DC4F3712FE"
+	hide_quest_until_deps_visible: true
+	icon: "create:railway_casing"
+	id: "172D5A74143D6975"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5E6226F6538D9706"]
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
+			icon: "minecraft:netherite_block"
+			id: "3361D7D6891611B9"
+			tasks: [{
+				id: "20D7F3816386A8E8"
+				title: "Netherite Tech"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"7C974AF735E1B188"
+				"3361D7D6891611B9"
+			]
+			id: "4E64ECCFC74BF0E8"
+			subtitle: "Expensive but strong."
+			tasks: [{
+				id: "6839EA2542BA6582"
+				item: "kubejs:netherite_frame"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"4E64ECCFC74BF0E8"
+				"7D921287B250BB80"
+			]
+			id: "13A9ACDF0ED0555E"
+			subtitle: "Do casings dream of steel sheep?"
+			tasks: [{
+				advancement: "create:train_casing_00"
+				criterion: ""
+				id: "4C1F89A03DF006FE"
+				type: "advancement"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3C8DE664A8FB1C4C"]
+			icon: "botania:natura_pylon"
+			id: "1935A85BB9023AFE"
+			subtitle: "Listen here you knife eared little shit!"
+			tasks: [
+				{
+					id: "1DE48C16893073E3"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(botania:livingwood_logs)"
+						}
+					}
+					title: "Any #botania:livingwood_logs"
+					type: "item"
+				}
+				{
+					id: "7F0BDC2F756C8A71"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(botania:glimmering_livingwood_logs)"
+						}
+					}
+					title: "Any #botania:glimmering_livingwood_logs"
+					type: "item"
+				}
+				{
+					id: "2F22362D196DECD6"
+					item: "botania:alfheim_portal"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "576DB008F0339659"
+					item: { Count: 2, id: "botania:natura_pylon" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "4D8F61C272ADE2EF"
+					item: { Count: 2, id: "botania:mana_pool" }
+					type: "item"
+				}
+			]
+			title: "Elven Gateway"
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3361D7D6891611B9"]
+			icon: "botania:terrasteel_ingot"
+			id: "3C8DE664A8FB1C4C"
+			rewards: [{
+				id: "5D195C89D4BF5611"
+				item: "botania:terrasteel_ingot"
+				type: "item"
+			}]
+			subtitle: "No you can't make Meowmere."
+			tasks: [
+				{
+					id: "2556C65A2A3A70E0"
+					item: "botania:terra_plate"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3348B632332478F1"
+					item: { Count: 4, id: "minecraft:lapis_block" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "106C0103CEAC385F"
+					item: { Count: 5, id: "botania:livingrock" }
+					type: "item"
+				}
+				{
+					id: "2B083D7529EADE22"
+					item: "botania:terrasteel_ingot"
+					type: "item"
+				}
+			]
+			title: "Terrasteel"
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1935A85BB9023AFE"]
+			id: "7D921287B250BB80"
+			subtitle: "Dreaming, but alive."
+			tasks: [{
+				id: "71773F10CCEB72A4"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:stripped_dreamwood)"
+					}
+				}
+				title: "Any #kubejs:stripped_dreamwood"
+				type: "item"
+			}]
+			title: "Stripped Dreamwood"
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"13A9ACDF0ED0555E"
+				"7B4E618F4E3E1DA5"
+			]
+			id: "56E006E5391D823E"
+			rewards: [{
+				count: 8
+				id: "5429A8C38789795E"
+				item: "thermal:lead_gear"
+				type: "item"
+			}]
+			subtitle: "Hi Logistics!"
+			tasks: [{
+				id: "24F651980657AE1B"
+				item: "kubejs:sturdy_kit"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"13A9ACDF0ED0555E"
+				"5424EDAE526F8EDF"
+			]
+			id: "7C1E5841EA76CE09"
+			rewards: [{
+				count: 8
+				id: "459BCE1C10989330"
+				item: "thermal:ruby_gear"
+				type: "item"
+			}]
+			subtitle: "Unlimited Power!!!"
+			tasks: [{
+				id: "0312EF83C9048F43"
+				item: "kubejs:power_kit"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"7C1E5841EA76CE09"
+				"56E006E5391D823E"
+			]
+			id: "508FF401DC99D0EB"
+			rewards: [{
+				id: "2330E3EB1DEEC500"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "79C86F407F47FA87"
+				title: "Chapter complete!"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"762152885E59CA6B"
+				"13069E0A3EE4E8BB"
+				"7226399545CF4EB5"
+			]
+			id: "7B4E618F4E3E1DA5"
+			subtitle: "Built ford tough!"
+			tasks: [{
+				id: "60C097D230D848C1"
+				item: "thermal:lead_gear"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"02E6F0EB04FC2EF0"
+				"3361D7D6891611B9"
+			]
+			id: "13069E0A3EE4E8BB"
+			subtitle: "Soldering again?!?"
+			tasks: [{
+				id: "0C7E83314D98FF37"
+				item: "kubejs:nicrosil_bucket"
+				type: "item"
+			}]
+			title: "Quartz Solder"
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"3050018DBF1D6C69"
+				"3361D7D6891611B9"
+			]
+			id: "762152885E59CA6B"
+			subtitle: "Leaded."
+			tasks: [{
+				id: "46337E05D31276CD"
+				item: "create:sturdy_sheet"
+				type: "item"
+			}]
+			title: "Sturdy Sheets"
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"37C2D7C2B32242EA"
+				"28CC1D7F58F66892"
+			]
+			id: "5424EDAE526F8EDF"
+			subtitle: "Shocking!"
+			tasks: [{
+				id: "1245CD71EBCF78B8"
+				item: "thermal:ruby_gear"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3361D7D6891611B9"]
+			id: "37C2D7C2B32242EA"
+			subtitle: "Do &4NOT &rdrink this."
+			tasks: [{
+				id: "192E33A6F03D2D7E"
+				item: "thermal:redstone_bucket"
+				type: "item"
+			}]
+			title: "Melting Redstone"
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3361D7D6891611B9"]
+			id: "28CC1D7F58F66892"
+			subtitle: "You need power to make power."
+			tasks: [
+				{
+					id: "526A3B499187F3D2"
+					item: "createaddition:alternator"
+					type: "item"
+				}
+				{
+					id: "6E33CD6A8254D00F"
+					item: "create_new_age:energiser_t2"
+					type: "item"
+				}
+			]
+			title: "Basic Power"
+			x: -1.5d
+			y: 1.5d
+		}
+	]
+	title: "Living Logistics Age"
+}

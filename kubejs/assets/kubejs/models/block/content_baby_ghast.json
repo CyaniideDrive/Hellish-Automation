@@ -1,0 +1,14 @@
+{
+  "parent": "kubejs:block/dried_ghast",
+  "particle": "kubejs:block/content_baby_ghast",
+  "textures": {
+    "bottom": "kubejs:block/ghasts/dried_ghast_hydration_3_bottom",
+    "east": "kubejs:block/ghasts/dried_ghast_hydration_3_east",
+    "north": "kubejs:block/ghasts/dried_ghast_hydration_3_north",
+    "particle": "kubejs:block/ghasts/dried_ghast_hydration_3_north",
+    "south": "kubejs:block/ghasts/dried_ghast_hydration_3_south",
+    "tentacles": "kubejs:block/ghasts/dried_ghast_hydration_3_tentacles",
+    "top": "kubejs:block/ghasts/dried_ghast_hydration_3_top",
+    "west": "kubejs:block/ghasts/dried_ghast_hydration_3_west"
+  }
+}

@@ -1,0 +1,150 @@
+StartupEvents.registry('block', event => {
+  event.create('lifeless_kit', 'cardinal')
+  .displayName('Lifeless Machine Kit')
+  .soundType('wood')
+  .requiresTool(false)
+  .box(1, 0, 4, 15, 9, 12, true)
+  .tagBlock('machine_kit').tagBlock('create:wrench_pickup')
+
+  event.create('rubber_kit', 'cardinal')
+  .displayName('Rubberized Machine Kit')
+  .soundType('wood')
+  .requiresTool(false)
+  .box(1, 0, 4, 15, 9, 12, true)
+  .tagBlock('machine_kit').tagBlock('create:wrench_pickup')
+
+  event.create('lava_kit', 'cardinal')
+  .displayName('Magmatic Machine Kit')
+  .soundType('wood')
+  .requiresTool(false)
+  .box(1, 0, 4, 15, 9, 12, true)
+  .tagBlock('machine_kit').tagBlock('create:wrench_pickup')
+
+  event.create('living_kit', 'cardinal')
+  .displayName('Living Machine Kit')
+  .soundType('wood')
+  .requiresTool(false)
+  .box(1, 0, 4, 15, 9, 12, true)
+  .tagBlock('machine_kit').tagBlock('create:wrench_pickup')
+
+  event.create('sturdy_kit', 'cardinal')
+  .displayName('Sturdy Machine Kit')
+  .soundType('wood')
+  .requiresTool(false)
+  .box(1, 0, 4, 15, 9, 12, true)
+  .tagBlock('machine_kit').tagBlock('create:wrench_pickup')
+
+  event.create('power_kit', 'cardinal')
+  .displayName('Charged Machine Kit')
+  .soundType('wood')
+  .requiresTool(false)
+  .box(1, 0, 4, 15, 9, 12, true)
+  .tagBlock('machine_kit').tagBlock('create:wrench_pickup')
+
+
+
+
+  event.create('brass_frame')
+  .displayName('Brass Frame')
+  .defaultCutout()
+  .viewBlocking(false)
+  .soundType('metal')
+  .hardness(5)
+  .resistance(5)
+  .requiresTool(true)
+  .tagBlock('minecraft:mineable/pickaxe').tagBlock('create:wrench_pickup')
+
+  event.create('netherite_frame')
+  .displayName('Netherite Frame')
+  .defaultCutout()
+  .viewBlocking(false)
+  .soundType('metal')
+  .hardness(5)
+  .resistance(5)
+  .requiresTool(true)
+  .tagBlock('minecraft:mineable/pickaxe').tagBlock('create:wrench_pickup')
+
+
+
+  event.create('dead_dirt')
+  .displayName('Dead Dirt')
+  .soundType('gravel')
+  .hardness(0.5)
+  .resistance(0.5)
+  .requiresTool(false)
+  .tagBlock('minecraft:mineable/shovel')
+
+
+
+  event.create('content_baby_ghast', 'cardinal')
+  .displayName('Baby Ghast')
+  .soundType('wool')
+  .hardness(1.0)
+  .resistance(0.5)
+  .requiresTool(false)
+  .box(3, 0, 3, 13, 10, 13, true)
+  .tagBlock('create:wrench_pickup')
+
+  event.create('depressed_baby_ghast', 'cardinal')
+  .displayName('Baby Ghast')
+  .soundType('soul_sand')
+  .hardness(1.0)
+  .resistance(0.5)
+  .requiresTool(false)
+  .box(3, 0, 3, 13, 10, 13, true)
+  .tagBlock('create:wrench_pickup')
+
+
+  event.create('empty_mimic', 'cardinal')
+  .displayName('Soulless Mimic')
+  .defaultCutout()
+  .soundType('wood')
+  .hardness(2.5)
+  .resistance(2.5)
+  .requiresTool(false)
+  .model('kubejs:block/empty_mimic')
+  .box(1, 0, 1, 14, 10, 14, true)
+  .tagBlock('minecraft:mineable/axe')
+
+
+  event.create('3d_widget')
+  .displayName('Axis Arrows')
+  .defaultCutout()
+  .soundType('glass')
+  .hardness(0)
+  .resistance(0)
+  .requiresTool(false)
+  .noCollision()
+  .box(1, 1, 1, 15, 15, 15, true)
+
+
+  event.create('3d_casing')
+  .displayName('Encased Axis')
+  .defaultCutout()
+  .soundType('glass')
+  .hardness(1)
+  .resistance(1)
+  .requiresTool(false)
+  .tagBlock('minecraft:mineable/pickaxe')
+
+
+//  event.create('lifeless_cardboard_block')
+//  .displayName('Lifeless Block of Cardboard')
+//  .defaultCutout()
+//  .soundType('wood')
+//  .hardness(0.2)
+//  .resistance(0.2)
+//  .requiresTool(false)
+//  .tagBlock('minecraft:mineable/axe')
+
+
+//  event.create('lifeless_bound_cardboard_block')
+//  .displayName('Lifeless Block of Bound Cardboard')
+//  .defaultCutout()
+//  .soundType('wood')
+//  .hardness(0.2)
+//  .resistance(0.2)
+//  .requiresTool(false)
+//  .tagBlock('minecraft:mineable/axe')
+
+})

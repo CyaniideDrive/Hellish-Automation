@@ -1,0 +1,16 @@
+filename = 'sophisticatedstoragecreateintegration-1.20.1-0.1.13.48.jar'
+name = 'Sophisticated Storage Create Integration'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'ee0d2107c195dc1e32e69537d63b420f00988aeb'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7031713
+project-id = 1226755

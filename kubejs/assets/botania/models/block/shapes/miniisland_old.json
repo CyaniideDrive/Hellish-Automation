@@ -1,0 +1,104 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/block",
+	"textures": {
+		"3": "kubejs:block/ghasts/dried_ghast_hydration_3_north",
+		"4": "kubejs:block/ghasts/dried_ghast_hydration_3_top",
+		"5": "kubejs:block/ghasts/dried_ghast_hydration_3_south",
+		"6": "kubejs:block/ghasts/dried_ghast_hydration_3_west",
+		"7": "kubejs:block/resurgent_soil",
+		"8": "kubejs:block/ghasts/dried_ghast_hydration_3_bottom",
+		"particle": "kubejs:block/ghasts/dried_ghast_hydration_3_north"
+	},
+	"elements": [
+		{
+			"name": "soil",
+			"from": [5, 9.01, 5],
+			"to": [11, 9.01, 11],
+			"faces": {
+				"up": {"uv": [0, 0, 16, 16], "texture": "#7"}
+			}
+		},
+		{
+			"name": "Platform",
+			"from": [4, 6, 4],
+			"to": [12, 9, 12],
+			"faces": {
+				"north": {"uv": [0, 4, 10, 9], "texture": "#3"},
+				"east": {"uv": [10, 1, 0, 5], "texture": "#6"},
+				"south": {"uv": [0, 0, 10, 4], "texture": "#5"},
+				"west": {"uv": [0, 1, 10, 5], "texture": "#6"},
+				"up": {"uv": [0, 0, 10, 10], "rotation": 180, "texture": "#4"},
+				"down": {"uv": [0, 0, 10, 10], "texture": "#8"}
+			}
+		},
+		{
+			"name": "Chunk1",
+			"from": [7, 4.5, 7],
+			"to": [10, 6.5, 11],
+			"faces": {
+				"north": {"uv": [10, 10, 13, 12], "texture": "#6"},
+				"east": {"uv": [1, 3, 5, 5], "texture": "#8"},
+				"south": {"uv": [4, 8, 7, 10], "texture": "#8"},
+				"west": {"uv": [5, 4, 9, 6], "texture": "#8"},
+				"up": {"uv": [0, 0, 3, 3], "texture": "#6"},
+				"down": {"uv": [5, 1, 8, 5], "texture": "#8"}
+			}
+		},
+		{
+			"name": "Chunk2",
+			"from": [5, 4, 7],
+			"to": [8, 6, 10],
+			"faces": {
+				"north": {"uv": [6, 4, 9, 6], "texture": "#8"},
+				"east": {"uv": [3, 4, 6, 6], "texture": "#8"},
+				"south": {"uv": [1, 4, 4, 6], "texture": "#8"},
+				"west": {"uv": [13, 2, 16, 4], "texture": "#6"},
+				"up": {"uv": [0, 0, 3, 3], "texture": "#6"},
+				"down": {"uv": [1, 2, 4, 5], "texture": "#8"}
+			}
+		},
+		{
+			"name": "Chunk3",
+			"from": [6, 5, 5],
+			"to": [11, 7, 8],
+			"faces": {
+				"north": {"uv": [0, 0, 5, 2], "texture": "#6"},
+				"east": {"uv": [0, 0, 3, 2], "texture": "#6"},
+				"south": {"uv": [2, 4, 7, 6], "texture": "#8"},
+				"west": {"uv": [1, 4, 4, 6], "texture": "#8"},
+				"up": {"uv": [0, 0, 3, 3], "texture": "#6"},
+				"down": {"uv": [3, 6, 8, 9], "texture": "#8"}
+			}
+		},
+		{
+			"name": "Chunk4",
+			"from": [7, 3.5, 6],
+			"to": [9, 5.5, 8],
+			"faces": {
+				"north": {"uv": [3, 2, 5, 4], "texture": "#8"},
+				"east": {"uv": [6, 4, 8, 6], "texture": "#8"},
+				"south": {"uv": [0, 0, 2, 2], "texture": "#6"},
+				"west": {"uv": [4, 3, 6, 5], "texture": "#8"},
+				"up": {"uv": [0, 0, 3, 3], "texture": "#6"},
+				"down": {"uv": [4, 6, 6, 8], "texture": "#8"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [30, -135, 0],
+			"scale": [0.75, 0.75, 0.75]
+		}
+	},
+	"groups": [
+		0,
+		{
+			"name": "group",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [1, 2, 3, 4, 5]
+		}
+	]
+}
