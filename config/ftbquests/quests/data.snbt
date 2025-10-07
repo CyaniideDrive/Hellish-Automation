@@ -8,6 +8,16 @@
 	disable_gui: false
 	drop_book_on_death: false
 	drop_loot_crates: false
+	emergency_items: [
+		{
+			Count: 1
+			id: "minecraft:wooden_pickaxe"
+			tag: {
+				Damage: 0
+			}
+		}
+		{ Count: 64, id: "minecraft:netherrack" }
+	]
 	emergency_items_cooldown: 300
 	grid_scale: 0.5d
 	lock_message: ""

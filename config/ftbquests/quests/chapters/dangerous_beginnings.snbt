@@ -71,7 +71,7 @@
 					id: "2CC49FFCD4139337"
 					item: {
 						Count: 1
-						id: "minecraft:wooden_pickaxe"
+						id: "minecraft:stone_pickaxe"
 						tag: {
 							Damage: 0
 						}

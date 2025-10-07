@@ -113,5 +113,8 @@
   },
   "supplementaries": {
     "hat_stand": true
+  },
+  "corpse": {
+    "corpse": true
   }
 }
