@@ -70,6 +70,8 @@ JEIEvents.hideItems(jei => {
     jei.hide('createaddition:electrum_sheet')
     jei.hide('ae2:charger')
     jei.hide('ae2:crank')
+    jei.hide('createoreexcavation:extractor')
+    jei.hide('create_new_age:energiser_t1')
 
 
 
@@ -87,10 +89,9 @@ JEIEvents.hideItems(jei => {
     jei.hide('kubejs:incomplete_slime_gear_2')
     jei.hide('kubejs:incomplete_netherite_frame')
     jei.hide('kubejs:incomplete_sturdy_gear')
-    jei.hide('kubejs:incomplete_energized_gear')
+    jei.hide('kubejs:incomplete_overcharged_gear')
     jei.hide('kubejs:incomplete_transmitter')
-    jei.hide('createoreexcavation:extractor')
-    jei.hide('create_new_age:energiser_t1')
+    jei.hide('kubejs:incomplete_netherite_smithing_template')
     
     
   })

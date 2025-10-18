@@ -100,7 +100,7 @@ LootJS.modifiers((event) => {
 
 LootJS.modifiers((event) => {
 	event.addLootTableModifier('minecraft:gameplay/piglin_bartering')
-        .randomChance(0.00003)
+        .randomChance(0.000001)
         .addLoot('kubejs:depressed_baby_ghast');
 });
 
@@ -108,6 +108,12 @@ LootJS.modifiers((event) => {
 	event.addLootTableModifier('minecraft:gameplay/piglin_bartering')
         .randomChance(0.00001)
         .addLoot('minecraft:wither_skeleton_skull');
+});
+
+LootJS.modifiers((event) => {
+	event.addLootTableModifier('minecraft:gameplay/piglin_bartering')
+        .randomChance(0.00001)
+        .addLoot('reliquary:witch_hat');
 });
 
 

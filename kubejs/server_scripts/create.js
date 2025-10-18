@@ -218,7 +218,7 @@ event.shaped(
     '232',
     '121'],
   {1: 'minecraft:netherite_scrap',
-   2: 'thermal:ruby_gear',
+   2: 'thermal:sapphire_gear',
    3: 'create:railway_casing'
   })
 
@@ -345,6 +345,7 @@ event.recipes.create.pressing('2x kubejs:brass_ring', '#forge:rods/brass')
 	createapplication('kubejs:lifeless_kit','#forge:ropes','create:rope_pulley')
 	createapplication('kubejs:lifeless_kit', 'create:turntable', 'create:windmill_bearing')
 	createapplication('kubejs:lifeless_kit', 'botania:mana_diamond', 'torchmaster:megatorch')
+	createapplication('kubejs:lifeless_kit', 'minecraft:respawn_anchor', 'create_power_loader:empty_andesite_chunk_loader')
 
 
 	//createcutting
@@ -388,6 +389,13 @@ event.recipes.create.pressing('2x kubejs:brass_ring', '#forge:rods/brass')
 	event.stonecutting('32x create:belt_connector', 'kubejs:rubber_kit')
 	event.stonecutting('4x create:portable_storage_interface', 'kubejs:rubber_kit')
 	event.stonecutting('8x prettypipes:pipe', 'kubejs:rubber_kit')
+	event.stonecutting('8x create:cart_assembler', 'kubejs:rubber_kit')
+	event.stonecutting('64x minecraft:rail', 'kubejs:rubber_kit')
+	event.stonecutting('32x minecraft:powered_rail', 'kubejs:rubber_kit')
+	event.stonecutting('32x minecraft:detector_rail', 'kubejs:rubber_kit')
+	event.stonecutting('32x minecraft:activator_rail', 'kubejs:rubber_kit')
+	event.stonecutting('16x create:controller_rail', 'kubejs:rubber_kit')
+	event.stonecutting('16x botania:ghost_rail', 'kubejs:rubber_kit')
 
 
 
@@ -429,6 +437,7 @@ event.recipes.create.pressing('2x kubejs:brass_ring', '#forge:rods/brass')
 	createapplication('kubejs:living_kit', 'create:brass_hand', 'create:mechanical_arm')
 	createapplication('kubejs:living_kit', 'minecraft:enchanting_table', 'create_enchantment_industry:printer')
 	createapplication('kubejs:living_kit', 'minecraft:grindstone', 'create_enchantment_industry:disenchanter')
+	createapplication('kubejs:living_kit', 'minecraft:respawn_anchor', 'create_power_loader:empty_brass_chunk_loader')
 
 
 	//multi output living cutting
@@ -484,12 +493,6 @@ event.recipes.create.pressing('2x kubejs:brass_ring', '#forge:rods/brass')
 	event.remove({ output:'railways:track_switch_andesite'})
 	event.remove({ output:'railways:track_switch_brass'})
 	event.remove({ output:'railways:portable_fuel_interface'})
-	event.stonecutting('64x minecraft:rail', 'kubejs:sturdy_kit')
-	event.stonecutting('32x minecraft:powered_rail', 'kubejs:sturdy_kit')
-	event.stonecutting('32x minecraft:detector_rail', 'kubejs:sturdy_kit')
-	event.stonecutting('32x minecraft:activator_rail', 'kubejs:sturdy_kit')
-	event.stonecutting('16x create:controller_rail', 'kubejs:sturdy_kit')
-	event.stonecutting('16x botania:ghost_rail', 'kubejs:sturdy_kit')
 	event.stonecutting('2x create:track_station', 'kubejs:sturdy_kit')
 	event.stonecutting('4x create:track_signal', 'kubejs:sturdy_kit')
 	event.stonecutting('4x railways:semaphore', 'kubejs:sturdy_kit')
@@ -509,7 +512,7 @@ event.recipes.create.pressing('2x kubejs:brass_ring', '#forge:rods/brass')
 
    //power
 	createapplication('kubejs:power_kit', 'createaddition:alternator', 'create_new_age:carbon_brushes')
-	createapplication('minecraft:copper_block', 'thermal:ruby_gear', 'create_new_age:generator_coil')
+	createapplication('minecraft:copper_block', 'thermal:sapphire_gear', 'create_new_age:generator_coil')
 	createapplication('kubejs:power_kit', 'createaddition:electric_motor', 'create_new_age:basic_motor')
 	createapplication('kubejs:power_kit', 'create_new_age:overcharged_diamond', 'create_new_age:basic_motor_extension')
 	createapplication('kubejs:power_kit', 'create_new_age:energiser_t2', 'create_new_age:energiser_t3')

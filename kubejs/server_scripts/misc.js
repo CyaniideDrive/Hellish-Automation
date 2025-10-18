@@ -100,6 +100,7 @@ event.remove({ id: 'thermal:energy_duct_4' })
 event.remove({ id: 'thermal:fluid_duct_4' })
 event.remove({ id: 'thermal:fluid_duct_windowed' })
 event.remove({ id: 'thermal:energy_limiter_attachment_2' })
+event.replaceOutput({ id: 'farmersdelight:cutting/ham' }, 'minecraft:porkchop', 'mynethersdelight:hoglin_loin')
 
 
 

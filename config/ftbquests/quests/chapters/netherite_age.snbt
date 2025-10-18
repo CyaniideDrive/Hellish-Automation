@@ -282,7 +282,7 @@
 			subtitle: "Shocking!"
 			tasks: [{
 				id: "1245CD71EBCF78B8"
-				item: "thermal:ruby_gear"
+				item: "thermal:sapphire_gear"
 				type: "item"
 			}]
 			x: 0.0d

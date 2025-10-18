@@ -1053,22 +1053,22 @@
 					type: "item"
 				}
 				{
-					id: "26600AF2457425D1"
-					item: "minecraft:porkchop"
-					type: "item"
-				}
-				{
 					id: "341D01179CEA4FF7"
 					item: "minecraft:mutton"
 					type: "item"
 				}
 				{
 					id: "5DD8F395BB2AC3C9"
-					item: "minecraft:chicken"
+					item: "minecraft:porkchop"
 					type: "item"
 				}
 				{
 					id: "691FEC7C6FD95E94"
+					item: "minecraft:chicken"
+					type: "item"
+				}
+				{
+					id: "24BE6E5B7B42146B"
 					item: "minecraft:rabbit"
 					type: "item"
 				}

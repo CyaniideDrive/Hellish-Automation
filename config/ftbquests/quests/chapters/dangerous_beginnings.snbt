@@ -169,7 +169,7 @@
 		}
 		{
 			dependencies: ["60AFE79ACB2DD5DB"]
-			description: ["Using this fancy fertilizer on Nylium or soil will grow shimmering mushrooms!"]
+			description: ["Using this fancy fertilizer on Nylium or Resurgent Soil will grow shimmering mushrooms!"]
 			id: "29A9D7D8AADD5314"
 			rewards: [
 				{
@@ -382,7 +382,131 @@
 				""
 				"You can also use barterers from the mod if you don't want entities in your automation, stop the lag folks!"
 			]
-			icon: "easy_piglins:piglin"
+			icon: {
+				Count: 1
+				id: "easy_piglins:piglin"
+				tag: {
+					Piglin: {
+						AbsorptionAmount: 0.0f
+						ActiveEffects: [{
+							Ambient: 0b
+							Amplifier: -1b
+							CurativeItems: [{
+								Count: 1b
+								id: "minecraft:milk_bucket"
+							}]
+							Duration: 20
+							Id: 2
+							ShowIcon: 0b
+							ShowParticles: 0b
+							"forge:id": "minecraft:slowness"
+						}]
+						ArmorDropChances: [
+							0.085f
+							0.085f
+							0.085f
+							0.085f
+						]
+						ArmorItems: [
+							{ }
+							{ }
+							{ }
+							{
+								Count: 1b
+								id: "minecraft:golden_helmet"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+						Attributes: [
+							{
+								Base: 16.0d
+								Modifiers: [{
+									Amount: 0.0487718812063312d
+									Name: "Random spawn bonus"
+									Operation: 1
+									UUID: [I;
+										-423832342
+										1211908567
+										-1291243054
+										529727459
+									]
+								}]
+								Name: "minecraft:generic.follow_range"
+							}
+							{
+								Base: 0.08d
+								Name: "forge:entity_gravity"
+							}
+							{
+								Base: 0.3499999940395355d
+								Modifiers: [{
+									Amount: -38.400001525878906d
+									Name: "effect.minecraft.slowness 255"
+									Operation: 2
+									UUID: [I;
+										1896341086
+										2095595568
+										-1811001012
+										521537680
+									]
+								}]
+								Name: "minecraft:generic.movement_speed"
+							}
+							{
+								Base: 0.0d
+								Name: "forge:step_height_addition"
+							}
+							{
+								Base: 0.0d
+								Name: "minecraft:generic.armor"
+							}
+							{
+								Base: 0.0d
+								Name: "minecraft:generic.armor_toughness"
+							}
+							{
+								Base: 0.1d
+								Name: "caelus:fall_flying"
+							}
+						]
+						Brain: {
+							memories: {
+								"minecraft:hunted_recently": {
+									ttl: 1357L
+									value: 1b
+								}
+							}
+						}
+						CanPickUpLoot: 1b
+						DeathTime: 0s
+						FallFlying: 0b
+						HandDropChances: [
+							0.085f
+							0.085f
+						]
+						HandItems: [
+							{
+								Count: 1b
+								id: "minecraft:crossbow"
+								tag: {
+									Damage: 0
+								}
+							}
+							{ }
+						]
+						Health: 16.0f
+						HurtByTimestamp: 0
+						HurtTime: 0s
+						Inventory: [ ]
+						LeftHanded: 0b
+						PersistenceRequired: 0b
+						TimeInOverworld: 0
+						"forge:spawn_type": "NATURAL"
+					}
+				}
+			}
 			id: "7C1D455C83BB0BE3"
 			rewards: [{
 				id: "6AD9F6E75D2B8A05"

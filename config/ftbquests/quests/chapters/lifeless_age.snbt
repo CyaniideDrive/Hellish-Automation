@@ -139,7 +139,9 @@
 			description: [
 				"These make belts, funnels, chutes, and other transport machines!"
 				"{@pagebreak}"
-				"Consider making a crate from quark, their storage is buffed and they are perfect for storing unstackable items like those in sequential assemblies!"
+				"They are also used to make Minecart Contraptions, which are your only item transport option at this stage!"
+				"{@pagebreak}"
+				"Consider making a crate from quark as well, their storage is buffed and they are perfect for storing unstackable items like those in sequential assemblies!"
 			]
 			id: "76EB2DEE222AAB81"
 			rewards: [{
